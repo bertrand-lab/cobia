@@ -1,0 +1,570 @@
+Processing ../data/kleiner_data/Run1_C4_832ng.mzML file...
+../data/kleiner_data/Run1_C4_832ng
+Progress of 'loading spectra list':
+  0.06 %                 0.28 %                 0.51 %                 0.84 %                 1.33 %                 1.81 %                 2.92 %                 3.91 %                 4.65 %                 5.58 %                 6.33 %                 7.27 %                 8.23 %                 9.12 %                 9.94 %                 10.73 %                 11.70 %                 12.66 %                 13.43 %                 14.34 %                 15.28 %                 16.28 %                 17.29 %                 18.17 %                 18.89 %                 19.85 %                 20.85 %                 21.83 %                 22.61 %                 23.61 %                 24.60 %                 25.59 %                 26.60 %                 27.59 %                 28.61 %                 29.43 %                 30.25 %                 31.27 %                 32.30 %                 33.34 %                 34.40 %                 35.25 %                 36.16 %                 36.97 %                 38.01 %                 39.07 %                 40.13 %                 40.98 %                 41.85 %                 42.75 %                 43.62 %                 44.70 %                 45.74 %                 46.79 %                 47.81 %                 48.62 %                 49.64 %                 50.65 %                 51.65 %                 52.64 %                 53.63 %                 54.60 %                 55.56 %                 56.50 %                 57.26 %                 57.86 %                 58.74 %                 59.67 %                 60.62 %                 61.23 %                 61.87 %                 62.83 %                 63.55 %                 64.27 %                 65.16 %                 65.89 %                 66.81 %                 67.52 %                 68.43 %                 69.12 %                 70.01 %                 70.77 %                 71.58 %                 72.30 %                 72.87 %                 73.53 %                 74.31 %                 74.99 %                 75.85 %                 76.49 %                 77.29 %                 78.11 %                 78.71 %                 79.48 %                 80.05 %                 80.80 %                 81.40 %                 82.13 %                 82.72 %                 83.45 %                 84.05 %                 84.57 %                 85.29 %                 86.02 %                 86.58 %                 87.16 %                 87.94 %                 88.63 %                 89.63 %                 90.72 %                 91.91 %                 93.01 %                 94.21 %                 95.46 %                 96.60 %                 97.44 %                 98.41 %                 99.30 %               -- done [took 01:46 m (CPU), 01:58 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.02 s (CPU), 0.02 s (Wall)] -- 
+Progress of 'smoothing data':
+  6.78 %                 18.70 %                 31.37 %                 46.30 %                 58.94 %                 69.97 %                 79.71 %                 87.21 %               -- done [took 8.71 s (CPU), 8.71 s (Wall)] -- 
+Progress of 'storing mzML file':
+  1.42 %                 4.00 %                 7.03 %                 10.06 %                 12.95 %                 16.27 %                 19.50 %                 23.03 %                 26.10 %                 29.34 %                 32.83 %                 36.14 %                 39.41 %                 42.54 %                 45.91 %                 49.18 %                 52.51 %                 55.66 %                 58.97 %                 61.76 %                 64.40 %                 67.92 %                 71.05 %                 74.00 %                 76.89 %                 79.70 %                 82.07 %                 84.44 %                 86.93 %                 89.95 %                 93.57 %                 97.48 %               -- done [took 32.55 s (CPU), 32.78 s (Wall)] -- 
+NoiseFilterSGolay took 02:41 m (wall), 02:29 m (CPU), 10.29 s (system), 02:19 m (user).
+Progress of 'loading spectra list':
+  0.02 %                 0.37 %                 0.85 %                 1.19 %                 1.78 %                 2.79 %                 3.73 %                 4.61 %                 5.47 %                 6.35 %                 7.23 %                 8.14 %                 9.04 %                 9.96 %                 10.85 %                 11.75 %                 12.65 %                 13.57 %                 14.45 %                 15.31 %                 16.25 %                 17.20 %                 18.13 %                 19.06 %                 19.98 %                 20.89 %                 21.79 %                 22.70 %                 23.43 %                 24.34 %                 25.26 %                 25.99 %                 26.95 %                 27.88 %                 28.81 %                 29.74 %                 30.68 %                 31.62 %                 32.58 %                 33.55 %                 34.54 %                 35.52 %                 36.48 %                 37.21 %                 38.17 %                 39.02 %                 40.00 %                 40.99 %                 41.98 %                 42.97 %                 43.91 %                 44.88 %                 45.84 %                 46.78 %                 47.73 %                 48.66 %                 49.61 %                 50.56 %                 51.50 %                 52.44 %                 53.35 %                 54.27 %                 55.16 %                 56.04 %                 56.92 %                 57.76 %                 58.63 %                 59.50 %                 60.35 %                 61.24 %                 62.13 %                 63.00 %                 63.85 %                 64.72 %                 65.59 %                 66.45 %                 67.33 %                 68.28 %                 68.97 %                 69.92 %                 70.87 %                 71.81 %                 72.75 %                 73.67 %                 74.54 %                 75.44 %                 76.09 %                 76.94 %                 77.75 %                 78.58 %                 79.37 %                 80.16 %                 80.93 %                 81.75 %                 82.51 %                 83.26 %                 84.00 %                 84.75 %                 85.48 %                 86.24 %                 87.01 %                 87.80 %                 88.69 %                 89.76 %                 90.91 %                 92.19 %                 93.51 %                 94.82 %                 96.12 %                 97.20 %                 98.29 %                 99.36 %               -- done [took 01:49 m (CPU), 01:51 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.02 s (CPU), 0.02 s (Wall)] -- 
+Progress of 'filtering baseline':
+  24.36 %                 69.03 %               -- done [took 2.52 s (CPU), 2.52 s (Wall)] -- 
+Progress of 'storing mzML file':
+  1.28 %                 4.08 %                 7.18 %                 9.79 %                 12.57 %                 15.78 %                 19.26 %                 22.27 %                 25.65 %                 28.82 %                 31.82 %                 34.89 %                 38.13 %                 41.24 %                 44.61 %                 47.60 %                 50.85 %                 53.80 %                 56.92 %                 60.21 %                 62.81 %                 65.38 %                 68.17 %                 71.12 %                 73.87 %                 76.35 %                 78.91 %                 81.40 %                 83.71 %                 86.01 %                 88.44 %                 91.49 %                 95.30 %                 98.03 %               -- done [took 34.37 s (CPU), 34.56 s (Wall)] -- 
+BaselineFilter took 02:31 m (wall), 02:29 m (CPU), 11.75 s (system), 02:17 m (user).
+Progress of 'loading spectra list':
+  0.09 %                 0.36 %                 0.84 %                 1.29 %                 2.06 %                 3.24 %                 4.28 %                 5.07 %                 6.05 %                 7.05 %                 8.08 %                 9.10 %                 10.12 %                 11.15 %                 12.18 %                 13.23 %                 14.26 %                 15.41 %                 16.45 %                 17.50 %                 18.52 %                 19.56 %                 20.59 %                 21.63 %                 22.61 %                 23.62 %                 24.38 %                 25.39 %                 26.42 %                 27.29 %                 28.23 %                 29.30 %                 30.34 %                 31.40 %                 32.45 %                 33.53 %                 34.65 %                 35.77 %                 36.85 %                 37.90 %                 39.03 %                 39.93 %                 41.04 %                 41.91 %                 42.98 %                 44.05 %                 45.16 %                 46.24 %                 47.32 %                 48.38 %                 49.43 %                 50.49 %                 51.54 %                 52.58 %                 53.60 %                 54.58 %                 55.37 %                 56.32 %                 57.28 %                 58.24 %                 58.99 %                 59.95 %                 60.69 %                 61.69 %                 62.66 %                 63.58 %                 64.52 %                 65.47 %                 66.43 %                 67.38 %                 68.31 %                 69.02 %                 69.97 %                 70.92 %                 71.87 %                 72.77 %                 73.70 %                 74.59 %                 75.40 %                 76.18 %                 77.03 %                 77.86 %                 78.71 %                 79.51 %                 80.31 %                 81.06 %                 81.66 %                 82.43 %                 83.17 %                 83.72 %                 84.45 %                 85.20 %                 85.94 %                 86.69 %                 87.49 %                 88.33 %                 89.31 %                 90.44 %                 91.68 %                 92.98 %                 94.30 %                 95.58 %                 96.77 %                 97.83 %                 98.96 %                 99.85 %               -- done [took 01:42 m (CPU), 01:45 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.02 s (CPU), 0.02 s (Wall)] -- 
+Progress of 'picking peaks':
+  0.04 %                 0.89 %                 3.08 %                 6.42 %                 9.71 %                 13.21 %                 17.10 %                 20.80 %                 24.47 %                 28.34 %                 32.46 %                 36.99 %                 41.69 %                 46.28 %                 50.42 %                 54.47 %                 57.98 %                 61.59 %                 65.02 %                 68.21 %                 71.23 %                 74.18 %                 76.91 %                 79.43 %                 81.74 %                 83.87 %                 86.00 %                 88.56 %                 94.55 %                 99.11 %               -- done [took 29.26 s (CPU), 29.27 s (Wall)] -- 
+Progress of 'storing mzML file':
+  1.60 %                 6.55 %                 11.26 %                 15.99 %                 20.74 %                 25.59 %                 30.15 %                 34.98 %                 39.74 %                 44.61 %                 49.52 %                 54.28 %                 58.99 %                 63.78 %                 68.47 %                 73.39 %                 77.97 %                 82.46 %                 86.80 %                 91.43 %                 96.38 %               -- done [took 21.40 s (CPU), 21.42 s (Wall)] -- 
+PeakPickerHiRes took 02:39 m (wall), 02:35 m (CPU), 10.10 s (system), 02:25 m (user).
+MS-GF+ Release (v2018.04.09) (9 April 2018)
+Loading database files...
+Warning: Sequence database contains 48 counts of letter 'U', which does not correspond to an amino acid.
+Warning: Sequence database contains 256 counts of letter 'X', which does not correspond to an amino acid.
+Loading database finished (elapsed time: 16.10 sec)
+Reading spectra...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/home-pool/home/software/MSGFPlus/MSGFPlus.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Ignoring 0 profile spectra.
+Ignoring 8627 spectra having less than 10 peaks.
+Reading spectra finished (elapsed time: 344.92 sec)
+Using 32 threads.
+Search Parameters:
+	PrecursorMassTolerance: 10.0ppm
+	IsotopeError: 0,1
+	TargetDecoyAnalysis: true
+	FragmentationMethod: As written in the spectrum or CID if no info
+	Instrument: LowRes
+	Enzyme: Tryp
+	Protocol: Automatic
+	NumTolerableTermini: 2
+	MinPeptideLength: 6
+	MaxPeptideLength: 40
+	NumMatchesPerSpec: 1
+	ChargeCarrierMass: 1.00727649 (proton)
+Spectrum 0-190769 (total: 190770)
+Splitting work into 96 tasks.
+Search progress: 0 / 96 tasks, 0.00%		0.01 seconds elapsed
+Search progress: 0 / 96 tasks, 0.41%		1.00 minutes elapsed
+Search progress: 0 / 96 tasks, 0.87%		2.00 minutes elapsed
+Search progress: 0 / 96 tasks, 1.33%		3.00 minutes elapsed
+Search progress: 0 / 96 tasks, 7.03%		4.00 minutes elapsed
+Search progress: 0 / 96 tasks, 14.47%		5.00 minutes elapsed
+Search progress: 0 / 96 tasks, 15.27%		6.00 minutes elapsed
+Search progress: 0 / 96 tasks, 16.84%		7.00 minutes elapsed
+Search progress: 1 / 96 tasks, 20.01%		7.94 minutes elapsed
+Search progress: 1 / 96 tasks, 20.29%		8.00 minutes elapsed
+Search progress: 1 / 96 tasks, 22.37%		9.00 minutes elapsed
+Search progress: 1 / 96 tasks, 22.90%		10.00 minutes elapsed
+Search progress: 1 / 96 tasks, 23.79%		11.00 minutes elapsed
+Search progress: 1 / 96 tasks, 24.81%		12.00 minutes elapsed
+Search progress: 1 / 96 tasks, 25.64%		13.00 minutes elapsed
+Search progress: 1 / 96 tasks, 27.00%		14.00 minutes elapsed
+Search progress: 1 / 96 tasks, 28.49%		15.00 minutes elapsed
+Search progress: 1 / 96 tasks, 28.96%		16.00 minutes elapsed
+Search progress: 1 / 96 tasks, 29.27%		17.00 minutes elapsed
+Search progress: 1 / 96 tasks, 29.74%		18.00 minutes elapsed
+Search progress: 2 / 96 tasks, 29.82%		18.08 minutes elapsed
+Search progress: 2 / 96 tasks, 30.47%		19.00 minutes elapsed
+Search progress: 3 / 96 tasks, 30.56%		19.13 minutes elapsed
+Search progress: 3 / 96 tasks, 31.20%		20.00 minutes elapsed
+Search progress: 4 / 96 tasks, 31.25%		20.01 minutes elapsed
+Search progress: 4 / 96 tasks, 31.93%		21.00 minutes elapsed
+Search progress: 5 / 96 tasks, 32.12%		21.49 minutes elapsed
+Search progress: 6 / 96 tasks, 32.26%		21.62 minutes elapsed
+Search progress: 7 / 96 tasks, 32.45%		21.90 minutes elapsed
+Search progress: 7 / 96 tasks, 32.52%		22.00 minutes elapsed
+Search progress: 8 / 96 tasks, 33.35%		22.38 minutes elapsed
+Search progress: 8 / 96 tasks, 34.41%		23.00 minutes elapsed
+Search progress: 8 / 96 tasks, 34.91%		24.00 minutes elapsed
+Search progress: 9 / 96 tasks, 35.08%		24.40 minutes elapsed
+Search progress: 10 / 96 tasks, 35.47%		24.74 minutes elapsed
+Search progress: 10 / 96 tasks, 35.82%		25.00 minutes elapsed
+Search progress: 11 / 96 tasks, 36.42%		25.41 minutes elapsed
+Search progress: 11 / 96 tasks, 37.24%		26.00 minutes elapsed
+Search progress: 12 / 96 tasks, 37.84%		26.49 minutes elapsed
+Search progress: 13 / 96 tasks, 38.10%		26.69 minutes elapsed
+Search progress: 13 / 96 tasks, 38.24%		27.00 minutes elapsed
+Search progress: 14 / 96 tasks, 39.15%		27.70 minutes elapsed
+Search progress: 14 / 96 tasks, 39.29%		28.00 minutes elapsed
+Search progress: 15 / 96 tasks, 39.35%		28.02 minutes elapsed
+Search progress: 16 / 96 tasks, 40.75%		28.98 minutes elapsed
+Search progress: 16 / 96 tasks, 40.77%		29.00 minutes elapsed
+Search progress: 17 / 96 tasks, 41.65%		29.47 minutes elapsed
+Search progress: 18 / 96 tasks, 42.11%		29.97 minutes elapsed
+Search progress: 18 / 96 tasks, 42.21%		30.00 minutes elapsed
+Search progress: 19 / 96 tasks, 42.83%		30.36 minutes elapsed
+Search progress: 20 / 96 tasks, 43.33%		30.62 minutes elapsed
+Search progress: 20 / 96 tasks, 44.16%		31.00 minutes elapsed
+Search progress: 21 / 96 tasks, 44.71%		31.51 minutes elapsed
+Search progress: 22 / 96 tasks, 45.09%		31.86 minutes elapsed
+Search progress: 23 / 96 tasks, 45.38%		31.96 minutes elapsed
+Search progress: 23 / 96 tasks, 45.44%		32.00 minutes elapsed
+Search progress: 24 / 96 tasks, 45.53%		32.03 minutes elapsed
+Search progress: 25 / 96 tasks, 46.34%		32.49 minutes elapsed
+Search progress: 26 / 96 tasks, 48.13%		32.92 minutes elapsed
+Search progress: 26 / 96 tasks, 48.20%		33.00 minutes elapsed
+Search progress: 27 / 96 tasks, 48.50%		33.19 minutes elapsed
+Search progress: 28 / 96 tasks, 48.95%		33.33 minutes elapsed
+Search progress: 29 / 96 tasks, 49.10%		33.59 minutes elapsed
+Search progress: 30 / 96 tasks, 49.59%		33.83 minutes elapsed
+Search progress: 30 / 96 tasks, 50.00%		34.00 minutes elapsed
+Search progress: 31 / 96 tasks, 51.83%		34.94 minutes elapsed
+Search progress: 31 / 96 tasks, 52.01%		35.00 minutes elapsed
+Search progress: 32 / 96 tasks, 52.39%		35.22 minutes elapsed
+Search progress: 32 / 96 tasks, 53.11%		36.00 minutes elapsed
+Search progress: 32 / 96 tasks, 54.04%		37.00 minutes elapsed
+Search progress: 33 / 96 tasks, 54.20%		37.47 minutes elapsed
+Search progress: 33 / 96 tasks, 54.82%		38.00 minutes elapsed
+Search progress: 33 / 96 tasks, 56.58%		39.00 minutes elapsed
+Search progress: 33 / 96 tasks, 57.59%		40.00 minutes elapsed
+Search progress: 33 / 96 tasks, 58.32%		41.00 minutes elapsed
+Search progress: 33 / 96 tasks, 59.22%		42.00 minutes elapsed
+Search progress: 33 / 96 tasks, 59.86%		43.00 minutes elapsed
+Search progress: 33 / 96 tasks, 60.30%		44.00 minutes elapsed
+Search progress: 33 / 96 tasks, 61.26%		45.00 minutes elapsed
+Search progress: 33 / 96 tasks, 61.87%		46.00 minutes elapsed
+Search progress: 33 / 96 tasks, 62.47%		47.00 minutes elapsed
+Search progress: 34 / 96 tasks, 62.77%		47.90 minutes elapsed
+Search progress: 35 / 96 tasks, 62.83%		47.92 minutes elapsed
+Search progress: 35 / 96 tasks, 62.93%		48.00 minutes elapsed
+Search progress: 35 / 96 tasks, 64.19%		49.00 minutes elapsed
+Search progress: 36 / 96 tasks, 64.37%		49.47 minutes elapsed
+Search progress: 36 / 96 tasks, 64.73%		50.00 minutes elapsed
+Search progress: 37 / 96 tasks, 65.23%		50.47 minutes elapsed
+Search progress: 38 / 96 tasks, 65.39%		50.70 minutes elapsed
+Search progress: 39 / 96 tasks, 65.52%		50.81 minutes elapsed
+Search progress: 39 / 96 tasks, 65.61%		51.00 minutes elapsed
+Search progress: 40 / 96 tasks, 65.77%		51.15 minutes elapsed
+Search progress: 41 / 96 tasks, 66.95%		51.77 minutes elapsed
+Search progress: 41 / 96 tasks, 67.39%		52.00 minutes elapsed
+Search progress: 42 / 96 tasks, 67.93%		52.64 minutes elapsed
+Search progress: 43 / 96 tasks, 68.06%		52.78 minutes elapsed
+Search progress: 43 / 96 tasks, 68.16%		53.00 minutes elapsed
+Search progress: 43 / 96 tasks, 69.45%		54.00 minutes elapsed
+Search progress: 43 / 96 tasks, 69.89%		55.00 minutes elapsed
+Search progress: 43 / 96 tasks, 70.33%		56.00 minutes elapsed
+Search progress: 44 / 96 tasks, 70.86%		56.35 minutes elapsed
+Search progress: 45 / 96 tasks, 71.01%		56.58 minutes elapsed
+Search progress: 45 / 96 tasks, 71.32%		57.00 minutes elapsed
+Search progress: 46 / 96 tasks, 71.93%		57.31 minutes elapsed
+Search progress: 46 / 96 tasks, 72.54%		58.00 minutes elapsed
+Search progress: 47 / 96 tasks, 72.71%		58.13 minutes elapsed
+Search progress: 48 / 96 tasks, 73.33%		58.46 minutes elapsed
+Search progress: 49 / 96 tasks, 73.73%		58.91 minutes elapsed
+Search progress: 49 / 96 tasks, 74.03%		59.00 minutes elapsed
+Search progress: 50 / 96 tasks, 74.61%		59.43 minutes elapsed
+Search progress: 50 / 96 tasks, 75.12%		1.00 hours elapsed
+Search progress: 51 / 96 tasks, 75.19%		1.00 hours elapsed
+Search progress: 52 / 96 tasks, 76.27%		1.02 hours elapsed
+Search progress: 53 / 96 tasks, 76.73%		1.03 hours elapsed
+Search progress: 54 / 96 tasks, 77.75%		1.04 hours elapsed
+Search progress: 55 / 96 tasks, 78.47%		1.05 hours elapsed
+Search progress: 56 / 96 tasks, 78.61%		1.05 hours elapsed
+Search progress: 57 / 96 tasks, 79.65%		1.06 hours elapsed
+Search progress: 58 / 96 tasks, 80.65%		1.07 hours elapsed
+Search progress: 58 / 96 tasks, 81.55%		1.08 hours elapsed
+Search progress: 59 / 96 tasks, 82.30%		1.09 hours elapsed
+Search progress: 60 / 96 tasks, 82.43%		1.10 hours elapsed
+Search progress: 61 / 96 tasks, 83.71%		1.11 hours elapsed
+Search progress: 62 / 96 tasks, 85.33%		1.14 hours elapsed
+Search progress: 63 / 96 tasks, 87.16%		1.16 hours elapsed
+Search progress: 63 / 96 tasks, 87.44%		1.17 hours elapsed
+Search progress: 64 / 96 tasks, 87.98%		1.17 hours elapsed
+Search progress: 65 / 96 tasks, 90.92%		1.20 hours elapsed
+Search progress: 65 / 96 tasks, 92.51%		1.25 hours elapsed
+Search progress: 66 / 96 tasks, 93.37%		1.28 hours elapsed
+Search progress: 67 / 96 tasks, 94.46%		1.32 hours elapsed
+Search progress: 67 / 96 tasks, 94.84%		1.33 hours elapsed
+Search progress: 68 / 96 tasks, 95.02%		1.34 hours elapsed
+Search progress: 69 / 96 tasks, 95.32%		1.35 hours elapsed
+Search progress: 70 / 96 tasks, 95.54%		1.36 hours elapsed
+Search progress: 71 / 96 tasks, 96.33%		1.40 hours elapsed
+Search progress: 72 / 96 tasks, 96.42%		1.40 hours elapsed
+Search progress: 73 / 96 tasks, 96.55%		1.41 hours elapsed
+Search progress: 74 / 96 tasks, 96.60%		1.41 hours elapsed
+Search progress: 75 / 96 tasks, 96.67%		1.41 hours elapsed
+Search progress: 76 / 96 tasks, 96.79%		1.41 hours elapsed
+Search progress: 76 / 96 tasks, 97.14%		1.42 hours elapsed
+Search progress: 77 / 96 tasks, 97.23%		1.42 hours elapsed
+Search progress: 78 / 96 tasks, 97.46%		1.44 hours elapsed
+Search progress: 79 / 96 tasks, 97.76%		1.47 hours elapsed
+Search progress: 80 / 96 tasks, 97.85%		1.47 hours elapsed
+Search progress: 81 / 96 tasks, 98.08%		1.49 hours elapsed
+Search progress: 81 / 96 tasks, 98.17%		1.50 hours elapsed
+Search progress: 82 / 96 tasks, 98.24%		1.50 hours elapsed
+Search progress: 83 / 96 tasks, 98.46%		1.52 hours elapsed
+Search progress: 84 / 96 tasks, 98.54%		1.52 hours elapsed
+Search progress: 85 / 96 tasks, 98.74%		1.54 hours elapsed
+Search progress: 86 / 96 tasks, 98.98%		1.57 hours elapsed
+Search progress: 87 / 96 tasks, 99.11%		1.58 hours elapsed
+Search progress: 87 / 96 tasks, 99.15%		1.58 hours elapsed
+Search progress: 88 / 96 tasks, 99.34%		1.60 hours elapsed
+Search progress: 89 / 96 tasks, 99.41%		1.61 hours elapsed
+Search progress: 90 / 96 tasks, 99.46%		1.61 hours elapsed
+Search progress: 91 / 96 tasks, 99.62%		1.62 hours elapsed
+Search progress: 92 / 96 tasks, 99.68%		1.62 hours elapsed
+Search progress: 93 / 96 tasks, 99.78%		1.63 hours elapsed
+Search progress: 94 / 96 tasks, 99.86%		1.63 hours elapsed
+Search progress: 95 / 96 tasks, 99.92%		1.63 hours elapsed
+Search progress: 96 / 96 tasks, 100.00%		1.63 hours elapsed
+Search progress: 96 / 96 tasks, 100.00%		1.63 hours elapsed
+Computing q-values...
+Computing q-values finished (elapsed time: 0.64 sec)
+Writing results...
+Writing results finished (elapsed time: 61.62 sec)
+MS-GF+ complete (total elapsed time: 6281.96 sec)
+No DatabaseName element found, use read in results at own risk.
+MSGFPlusAdapter took 01:45:59 h (wall), 01:17 m (CPU), 2.49 s (system), 01:14 m (user).
+Mapping 136540 peptides to 246176 proteins.
+
+Aho-Corasick done:
+  found 183081 hits for 129322 of 136540 peptides (time: 19.387897 s (wall), 381.43 s (CPU)).
+Using suffix array to find ambiguous matches...
+... for 7218 unmatched peptide(s)...
+... in all 246176 protein(s).
+Peptide hits passing enzyme filter: 183081
+     ... rejected by enzyme filter: 155315
+Unmatched peptide: PAPPPPAPKPAVPEVDPAVELAR
+Unmatched peptide: PNEYFTEDRQEAPLITDR
+<Unmatched peptide: PNEYFTEDRQEAPLITDR> occurred 2 times
+Unmatched peptide: ASTPDSFWYGPER
+<Unmatched peptide: PAPPPPAPKPAVPEVDPAVELAR> occurred 3 times
+Unmatched peptide: NQAAATVGSASDTPSTLTTLVPLPVPTTISPR
+Unmatched peptide: VTGSLQLQATDLSK
+Unmatched peptide: ASTPDSFWYGPER
+Unmatched peptide: PNEYFTEDRQEAPLITDR
+<Unmatched peptide: ASTPDSFWYGPER> occurred 3 times
+Unmatched peptide: PTDKEIIIDVPLATK
+<Unmatched peptide: PNEYFTEDRQEAPLITDR> occurred 2 times
+Unmatched peptide: ...
+-----------------------------------
+Peptides statistics
+
+  target/decoy:
+    match to target DB only: 85687
+    match to decoy DB only : 42367
+    match to both          : 1268
+
+  mapping to proteins:
+    no match (to 0 protein)         : 7218
+    unique match (to 1 protein)     : 103853
+    non-unique match (to >1 protein): 25469
+PeptideIndexer found unmatched peptides, which could not be associated to a protein.
+Potential solutions:
+   - check your FASTA database for completeness
+   - set 'enzyme:specificity' to match the identification parameters of the search engine
+   - some engines (e.g. X! Tandem) employ loose cutting rules generating non-tryptic peptides;
+     if you trust them, disable enzyme specificity
+   - increase 'aaa_max' to allow more ambiguous amino acids
+   - as a last resort: use the 'allow_unmatched' option to accept unmatched peptides
+     (note that unmatched peptides cannot be used for FDR calculation or quantification)
+Result files were written, but PeptideIndexer will exit with an error code.
+-----------------------------------
+Protein statistics
+
+  new proteins: 0
+  orphaned proteins: 3799 (all removed)
+PeptideIndexer took 01:26 m (wall), 07:29 m (CPU), 04:47 m (system), 02:41 m (user).
+Invalid string parameter value '' for parameter 'PSM' given! Valid values are: 'true,false'. Updating failed!
+Parameters passed to 'FalseDiscoveryRate' are invalid. To prevent usage of wrong defaults, please update/fix the parameters!
+Processing ../data/kleiner_data/Run4_C4_2000ng.mzML file...
+../data/kleiner_data/Run4_C4_2000ng
+Progress of 'loading spectra list':
+  0.08 %                 0.51 %                 0.72 %                 1.09 %                 1.32 %                 1.80 %                 2.56 %                 3.96 %                 5.27 %                 6.49 %                 7.59 %                 8.94 %                 10.00 %                 11.02 %                 12.03 %                 13.03 %                 14.12 %                 15.18 %                 16.18 %                 17.25 %                 17.97 %                 19.23 %                 20.29 %                 21.57 %                 22.60 %                 23.89 %                 24.98 %                 26.25 %                 27.55 %                 28.33 %                 29.25 %                 30.52 %                 31.83 %                 32.82 %                 33.82 %                 34.81 %                 35.34 %                 36.61 %                 37.60 %                 38.76 %                 39.86 %                 40.83 %                 41.86 %                 43.11 %                 44.07 %                 45.04 %                 45.98 %                 47.23 %                 48.15 %                 48.81 %                 49.77 %                 50.87 %                 51.78 %                 53.05 %                 54.31 %                 55.29 %                 56.08 %                 56.68 %                 57.48 %                 58.36 %                 59.29 %                 60.28 %                 61.40 %                 62.23 %                 63.18 %                 63.98 %                 64.72 %                 65.59 %                 66.43 %                 66.97 %                 67.64 %                 68.34 %                 68.92 %                 70.04 %                 70.89 %                 71.76 %                 72.59 %                 73.46 %                 74.33 %                 74.80 %                 75.61 %                 76.50 %                 77.36 %                 78.49 %                 79.35 %                 80.15 %                 80.83 %                 81.69 %                 82.91 %                 83.79 %                 84.31 %                 85.19 %                 86.42 %                 87.75 %                 88.99 %                 90.40 %                 92.13 %                 93.58 %                 95.23 %                 96.47 %                 98.00 %                 99.39 %               -- done [took 01:21 m (CPU), 01:41 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'smoothing data':
+  7.48 %                 23.24 %                 37.56 %                 51.17 %                 62.28 %                 73.31 %                 84.58 %               -- done [took 7.51 s (CPU), 7.50 s (Wall)] -- 
+Progress of 'storing mzML file':
+  2.42 %                 7.41 %                 11.30 %                 15.74 %                 19.93 %                 24.26 %                 29.04 %                 33.57 %                 37.87 %                 42.32 %                 46.35 %                 50.45 %                 54.13 %                 58.10 %                 61.47 %                 65.04 %                 69.02 %                 72.86 %                 76.26 %                 80.29 %                 84.04 %                 88.47 %                 93.77 %                 98.75 %               -- done [took 23.97 s (CPU), 24.28 s (Wall)] -- 
+NoiseFilterSGolay took 02:15 m (wall), 01:54 m (CPU), 10.46 s (system), 01:44 m (user).
+Progress of 'loading spectra list':
+  0.03 %                 0.26 %                 0.52 %                 1.01 %                 1.75 %                 2.97 %                 4.65 %                 6.13 %                 7.49 %                 8.92 %                 10.35 %                 11.73 %                 13.15 %                 14.52 %                 15.90 %                 17.30 %                 18.37 %                 19.76 %                 21.16 %                 22.53 %                 23.91 %                 25.32 %                 26.68 %                 28.08 %                 29.47 %                 30.81 %                 32.19 %                 33.50 %                 34.85 %                 36.19 %                 37.55 %                 38.90 %                 40.24 %                 41.57 %                 42.89 %                 44.17 %                 45.48 %                 46.70 %                 48.09 %                 49.06 %                 50.45 %                 51.75 %                 53.05 %                 54.40 %                 55.63 %                 56.80 %                 57.99 %                 59.14 %                 60.19 %                 61.14 %                 62.32 %                 63.50 %                 64.64 %                 65.80 %                 66.98 %                 68.14 %                 69.34 %                 70.49 %                 71.69 %                 72.88 %                 74.08 %                 75.24 %                 76.42 %                 77.59 %                 78.80 %                 79.76 %                 80.88 %                 82.17 %                 83.35 %                 84.57 %                 85.80 %                 87.24 %                 88.86 %                 90.83 %                 92.84 %                 94.72 %                 96.57 %                 98.31 %               -- done [took 01:15 m (CPU), 01:18 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'filtering baseline':
+  26.89 %                 73.44 %               -- done [took 2.00 s (CPU), 2.01 s (Wall)] -- 
+Progress of 'storing mzML file':
+  0.83 %                 4.19 %                 9.70 %                 13.56 %                 18.14 %                 22.56 %                 26.94 %                 31.15 %                 35.27 %                 39.82 %                 43.62 %                 48.03 %                 52.25 %                 56.25 %                 59.41 %                 62.66 %                 66.13 %                 69.67 %                 72.60 %                 76.50 %                 80.11 %                 84.10 %                 88.34 %                 93.76 %                 98.67 %               -- done [took 24.44 s (CPU), 24.63 s (Wall)] -- 
+BaselineFilter took 01:46 m (wall), 01:44 m (CPU), 9.73 s (system), 01:34 m (user).
+Progress of 'loading spectra list':
+  0.04 %                 0.17 %                 0.44 %                 1.21 %                 1.93 %                 3.39 %                 5.02 %                 6.07 %                 7.55 %                 9.05 %                 10.50 %                 11.96 %                 13.46 %                 14.87 %                 16.33 %                 17.76 %                 19.20 %                 20.64 %                 22.13 %                 23.55 %                 25.01 %                 26.42 %                 27.88 %                 29.32 %                 30.75 %                 32.19 %                 33.59 %                 34.67 %                 36.06 %                 37.51 %                 38.92 %                 40.35 %                 41.49 %                 42.88 %                 43.91 %                 45.28 %                 46.62 %                 47.97 %                 49.33 %                 50.70 %                 51.96 %                 53.23 %                 54.49 %                 55.69 %                 56.85 %                 58.00 %                 59.14 %                 60.31 %                 61.49 %                 62.65 %                 63.82 %                 64.93 %                 66.02 %                 67.15 %                 68.31 %                 69.49 %                 70.61 %                 71.72 %                 72.86 %                 74.04 %                 75.19 %                 76.29 %                 77.40 %                 78.55 %                 79.71 %                 80.88 %                 82.13 %                 83.22 %                 84.35 %                 85.54 %                 86.85 %                 88.31 %                 90.00 %                 91.93 %                 93.78 %                 95.51 %                 97.20 %                 98.83 %               -- done [took 01:15 m (CPU), 01:17 m (Wall)] -- 
+Progress of 'loading chromatogram list':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'picking peaks':
+  0.27 %                 1.85 %                 7.43 %                 12.41 %                 17.41 %                 22.42 %                 27.51 %                 32.81 %                 37.85 %                 42.81 %                 47.58 %                 52.19 %                 56.35 %                 59.91 %                 63.36 %                 66.87 %                 70.53 %                 74.22 %                 77.71 %                 81.40 %                 85.37 %                 92.41 %                 99.17 %               -- done [took 22.32 s (CPU), 22.33 s (Wall)] -- 
+Progress of 'storing mzML file':
+  4.39 %                 11.54 %                 18.50 %                 25.62 %                 32.63 %                 39.68 %                 46.07 %                 52.13 %                 58.46 %                 64.82 %                 70.94 %                 77.13 %                 83.91 %                 91.12 %                 98.65 %               -- done [took 14.93 s (CPU), 14.94 s (Wall)] -- 
+PeakPickerHiRes took 01:56 m (wall), 01:54 m (CPU), 7.64 s (system), 01:47 m (user).
+MS-GF+ Release (v2018.04.09) (9 April 2018)
+Loading database files...
+Warning: Sequence database contains 48 counts of letter 'U', which does not correspond to an amino acid.
+Warning: Sequence database contains 256 counts of letter 'X', which does not correspond to an amino acid.
+Loading database finished (elapsed time: 15.63 sec)
+Reading spectra...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/home-pool/home/software/MSGFPlus/MSGFPlus.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Ignoring 0 profile spectra.
+Ignoring 1554 spectra having less than 10 peaks.
+Reading spectra finished (elapsed time: 283.21 sec)
+Using 32 threads.
+Search Parameters:
+	PrecursorMassTolerance: 10.0ppm
+	IsotopeError: 0,1
+	TargetDecoyAnalysis: true
+	FragmentationMethod: As written in the spectrum or CID if no info
+	Instrument: LowRes
+	Enzyme: Tryp
+	Protocol: Automatic
+	NumTolerableTermini: 2
+	MinPeptideLength: 6
+	MaxPeptideLength: 40
+	NumMatchesPerSpec: 1
+	ChargeCarrierMass: 1.00727649 (proton)
+Spectrum 0-145294 (total: 145295)
+Splitting work into 96 tasks.
+Search progress: 0 / 96 tasks, 0.00%		0.01 seconds elapsed
+Search progress: 0 / 96 tasks, 0.49%		1.00 minutes elapsed
+Search progress: 0 / 96 tasks, 1.02%		2.00 minutes elapsed
+Search progress: 0 / 96 tasks, 2.46%		3.00 minutes elapsed
+Search progress: 1 / 96 tasks, 2.84%		3.07 minutes elapsed
+Search progress: 1 / 96 tasks, 11.05%		4.00 minutes elapsed
+Search progress: 1 / 96 tasks, 15.14%		5.00 minutes elapsed
+Search progress: 1 / 96 tasks, 16.44%		6.00 minutes elapsed
+Search progress: 1 / 96 tasks, 18.31%		7.00 minutes elapsed
+Search progress: 1 / 96 tasks, 21.32%		8.00 minutes elapsed
+Search progress: 1 / 96 tasks, 22.31%		9.00 minutes elapsed
+Search progress: 1 / 96 tasks, 22.65%		10.00 minutes elapsed
+Search progress: 1 / 96 tasks, 23.69%		11.00 minutes elapsed
+Search progress: 1 / 96 tasks, 24.89%		12.00 minutes elapsed
+Search progress: 2 / 96 tasks, 26.08%		12.78 minutes elapsed
+Search progress: 2 / 96 tasks, 26.37%		13.00 minutes elapsed
+Search progress: 2 / 96 tasks, 28.00%		14.00 minutes elapsed
+Search progress: 2 / 96 tasks, 29.44%		15.00 minutes elapsed
+Search progress: 2 / 96 tasks, 29.79%		16.00 minutes elapsed
+Search progress: 2 / 96 tasks, 30.13%		17.00 minutes elapsed
+Search progress: 2 / 96 tasks, 30.48%		18.00 minutes elapsed
+Search progress: 3 / 96 tasks, 31.07%		18.99 minutes elapsed
+Search progress: 3 / 96 tasks, 31.07%		19.00 minutes elapsed
+Search progress: 4 / 96 tasks, 31.23%		19.17 minutes elapsed
+Search progress: 5 / 96 tasks, 31.48%		19.60 minutes elapsed
+Search progress: 5 / 96 tasks, 32.32%		20.00 minutes elapsed
+Search progress: 6 / 96 tasks, 32.38%		20.04 minutes elapsed
+Search progress: 6 / 96 tasks, 33.41%		21.00 minutes elapsed
+Search progress: 6 / 96 tasks, 33.74%		22.00 minutes elapsed
+Search progress: 7 / 96 tasks, 34.07%		22.84 minutes elapsed
+Search progress: 8 / 96 tasks, 34.12%		22.85 minutes elapsed
+Search progress: 8 / 96 tasks, 34.26%		23.00 minutes elapsed
+Search progress: 9 / 96 tasks, 34.46%		23.47 minutes elapsed
+Search progress: 10 / 96 tasks, 34.91%		23.60 minutes elapsed
+Search progress: 11 / 96 tasks, 35.67%		23.95 minutes elapsed
+Search progress: 11 / 96 tasks, 35.84%		24.00 minutes elapsed
+Search progress: 12 / 96 tasks, 36.77%		24.54 minutes elapsed
+Search progress: 13 / 96 tasks, 36.85%		24.57 minutes elapsed
+Search progress: 13 / 96 tasks, 37.36%		25.00 minutes elapsed
+Search progress: 14 / 96 tasks, 37.47%		25.20 minutes elapsed
+Search progress: 14 / 96 tasks, 38.93%		26.00 minutes elapsed
+Search progress: 15 / 96 tasks, 38.99%		26.04 minutes elapsed
+Search progress: 16 / 96 tasks, 39.28%		26.14 minutes elapsed
+Search progress: 17 / 96 tasks, 39.67%		26.67 minutes elapsed
+Search progress: 18 / 96 tasks, 40.07%		26.97 minutes elapsed
+Search progress: 19 / 96 tasks, 40.22%		26.99 minutes elapsed
+Search progress: 19 / 96 tasks, 40.29%		27.00 minutes elapsed
+Search progress: 20 / 96 tasks, 41.91%		28.00 minutes elapsed
+Search progress: 20 / 96 tasks, 41.91%		28.00 minutes elapsed
+Search progress: 21 / 96 tasks, 42.30%		28.46 minutes elapsed
+Search progress: 22 / 96 tasks, 42.77%		28.83 minutes elapsed
+Search progress: 22 / 96 tasks, 43.31%		29.00 minutes elapsed
+Search progress: 23 / 96 tasks, 43.38%		29.07 minutes elapsed
+Search progress: 24 / 96 tasks, 44.82%		29.99 minutes elapsed
+Search progress: 24 / 96 tasks, 44.86%		30.00 minutes elapsed
+Search progress: 25 / 96 tasks, 45.14%		30.28 minutes elapsed
+Search progress: 26 / 96 tasks, 45.56%		30.43 minutes elapsed
+Search progress: 26 / 96 tasks, 46.25%		31.00 minutes elapsed
+Search progress: 27 / 96 tasks, 46.41%		31.08 minutes elapsed
+Search progress: 28 / 96 tasks, 46.78%		31.20 minutes elapsed
+Search progress: 28 / 96 tasks, 47.46%		32.00 minutes elapsed
+Search progress: 29 / 96 tasks, 48.45%		32.36 minutes elapsed
+Search progress: 30 / 96 tasks, 48.59%		32.58 minutes elapsed
+Search progress: 31 / 96 tasks, 48.91%		32.75 minutes elapsed
+Search progress: 32 / 96 tasks, 49.11%		32.84 minutes elapsed
+Search progress: 32 / 96 tasks, 49.66%		33.00 minutes elapsed
+Search progress: 32 / 96 tasks, 51.50%		34.00 minutes elapsed
+Search progress: 33 / 96 tasks, 51.60%		34.01 minutes elapsed
+Search progress: 33 / 96 tasks, 52.48%		35.00 minutes elapsed
+Search progress: 33 / 96 tasks, 53.26%		36.00 minutes elapsed
+Search progress: 33 / 96 tasks, 53.63%		37.00 minutes elapsed
+Search progress: 33 / 96 tasks, 54.50%		38.00 minutes elapsed
+Search progress: 33 / 96 tasks, 55.07%		39.00 minutes elapsed
+Search progress: 33 / 96 tasks, 56.18%		40.00 minutes elapsed
+Search progress: 33 / 96 tasks, 57.15%		41.00 minutes elapsed
+Search progress: 33 / 96 tasks, 58.09%		42.00 minutes elapsed
+Search progress: 33 / 96 tasks, 58.59%		43.00 minutes elapsed
+Search progress: 34 / 96 tasks, 59.16%		43.89 minutes elapsed
+Search progress: 34 / 96 tasks, 59.23%		44.00 minutes elapsed
+Search progress: 34 / 96 tasks, 59.78%		45.00 minutes elapsed
+Search progress: 34 / 96 tasks, 60.17%		46.00 minutes elapsed
+Search progress: 34 / 96 tasks, 60.73%		47.00 minutes elapsed
+Search progress: 34 / 96 tasks, 61.29%		48.00 minutes elapsed
+Search progress: 34 / 96 tasks, 61.67%		49.00 minutes elapsed
+Search progress: 35 / 96 tasks, 61.86%		49.58 minutes elapsed
+Search progress: 35 / 96 tasks, 62.00%		50.00 minutes elapsed
+Search progress: 35 / 96 tasks, 62.93%		51.00 minutes elapsed
+Search progress: 36 / 96 tasks, 63.12%		51.09 minutes elapsed
+Search progress: 36 / 96 tasks, 64.07%		52.00 minutes elapsed
+Search progress: 37 / 96 tasks, 64.50%		52.23 minutes elapsed
+Search progress: 38 / 96 tasks, 64.63%		52.39 minutes elapsed
+Search progress: 38 / 96 tasks, 64.80%		53.00 minutes elapsed
+Search progress: 38 / 96 tasks, 65.84%		54.00 minutes elapsed
+Search progress: 38 / 96 tasks, 66.21%		55.00 minutes elapsed
+Search progress: 38 / 96 tasks, 66.41%		56.00 minutes elapsed
+Search progress: 39 / 96 tasks, 66.49%		56.13 minutes elapsed
+Search progress: 39 / 96 tasks, 66.68%		57.00 minutes elapsed
+Search progress: 40 / 96 tasks, 66.76%		57.16 minutes elapsed
+Search progress: 41 / 96 tasks, 66.86%		57.23 minutes elapsed
+Search progress: 41 / 96 tasks, 67.56%		58.00 minutes elapsed
+Search progress: 42 / 96 tasks, 68.46%		59.00 minutes elapsed
+Search progress: 42 / 96 tasks, 68.46%		59.00 minutes elapsed
+Search progress: 43 / 96 tasks, 68.65%		59.42 minutes elapsed
+Search progress: 44 / 96 tasks, 68.81%		59.85 minutes elapsed
+Search progress: 44 / 96 tasks, 68.92%		1.00 hours elapsed
+Search progress: 45 / 96 tasks, 70.22%		1.02 hours elapsed
+Search progress: 46 / 96 tasks, 71.52%		1.05 hours elapsed
+Search progress: 47 / 96 tasks, 71.65%		1.06 hours elapsed
+Search progress: 48 / 96 tasks, 71.81%		1.06 hours elapsed
+Search progress: 49 / 96 tasks, 73.47%		1.08 hours elapsed
+Search progress: 49 / 96 tasks, 73.54%		1.08 hours elapsed
+Search progress: 50 / 96 tasks, 74.05%		1.10 hours elapsed
+Search progress: 51 / 96 tasks, 74.62%		1.11 hours elapsed
+Search progress: 52 / 96 tasks, 76.35%		1.15 hours elapsed
+Search progress: 52 / 96 tasks, 77.29%		1.17 hours elapsed
+Search progress: 53 / 96 tasks, 77.50%		1.18 hours elapsed
+Search progress: 54 / 96 tasks, 77.60%		1.18 hours elapsed
+Search progress: 55 / 96 tasks, 80.09%		1.23 hours elapsed
+Search progress: 56 / 96 tasks, 80.27%		1.24 hours elapsed
+Search progress: 56 / 96 tasks, 81.29%		1.25 hours elapsed
+Search progress: 57 / 96 tasks, 81.67%		1.26 hours elapsed
+Search progress: 58 / 96 tasks, 82.56%		1.29 hours elapsed
+Search progress: 59 / 96 tasks, 82.69%		1.29 hours elapsed
+Search progress: 60 / 96 tasks, 84.60%		1.31 hours elapsed
+Search progress: 61 / 96 tasks, 85.96%		1.32 hours elapsed
+Search progress: 62 / 96 tasks, 86.09%		1.33 hours elapsed
+Search progress: 62 / 96 tasks, 86.89%		1.33 hours elapsed
+Search progress: 63 / 96 tasks, 88.96%		1.36 hours elapsed
+Search progress: 64 / 96 tasks, 90.76%		1.39 hours elapsed
+Search progress: 64 / 96 tasks, 91.98%		1.42 hours elapsed
+Search progress: 65 / 96 tasks, 92.21%		1.43 hours elapsed
+Search progress: 66 / 96 tasks, 94.05%		1.49 hours elapsed
+Search progress: 67 / 96 tasks, 94.12%		1.49 hours elapsed
+Search progress: 68 / 96 tasks, 94.23%		1.49 hours elapsed
+Search progress: 68 / 96 tasks, 94.65%		1.50 hours elapsed
+Search progress: 69 / 96 tasks, 94.81%		1.51 hours elapsed
+Search progress: 70 / 96 tasks, 96.37%		1.58 hours elapsed
+Search progress: 71 / 96 tasks, 96.45%		1.58 hours elapsed
+Search progress: 71 / 96 tasks, 96.49%		1.58 hours elapsed
+Search progress: 72 / 96 tasks, 96.63%		1.59 hours elapsed
+Search progress: 73 / 96 tasks, 96.77%		1.60 hours elapsed
+Search progress: 74 / 96 tasks, 97.04%		1.62 hours elapsed
+Search progress: 75 / 96 tasks, 97.42%		1.65 hours elapsed
+Search progress: 75 / 96 tasks, 97.54%		1.67 hours elapsed
+Search progress: 76 / 96 tasks, 97.80%		1.69 hours elapsed
+Search progress: 77 / 96 tasks, 97.93%		1.70 hours elapsed
+Search progress: 78 / 96 tasks, 98.00%		1.70 hours elapsed
+Search progress: 79 / 96 tasks, 98.23%		1.72 hours elapsed
+Search progress: 80 / 96 tasks, 98.46%		1.74 hours elapsed
+Search progress: 80 / 96 tasks, 98.54%		1.75 hours elapsed
+Search progress: 81 / 96 tasks, 98.69%		1.76 hours elapsed
+Search progress: 82 / 96 tasks, 98.82%		1.77 hours elapsed
+Search progress: 83 / 96 tasks, 98.92%		1.78 hours elapsed
+Search progress: 84 / 96 tasks, 98.99%		1.78 hours elapsed
+Search progress: 85 / 96 tasks, 99.10%		1.78 hours elapsed
+Search progress: 86 / 96 tasks, 99.21%		1.79 hours elapsed
+Search progress: 87 / 96 tasks, 99.30%		1.80 hours elapsed
+Search progress: 88 / 96 tasks, 99.37%		1.80 hours elapsed
+Search progress: 89 / 96 tasks, 99.45%		1.80 hours elapsed
+Search progress: 90 / 96 tasks, 99.53%		1.81 hours elapsed
+Search progress: 91 / 96 tasks, 99.65%		1.82 hours elapsed
+Search progress: 92 / 96 tasks, 99.71%		1.82 hours elapsed
+Search progress: 93 / 96 tasks, 99.82%		1.82 hours elapsed
+Search progress: 94 / 96 tasks, 99.88%		1.82 hours elapsed
+Search progress: 95 / 96 tasks, 99.95%		1.82 hours elapsed
+Search progress: 96 / 96 tasks, 100.00%		1.82 hours elapsed
+Search progress: 96 / 96 tasks, 100.00%		1.82 hours elapsed
+Computing q-values...
+Computing q-values finished (elapsed time: 0.46 sec)
+Writing results...
+Writing results finished (elapsed time: 51.46 sec)
+MS-GF+ complete (total elapsed time: 6905.28 sec)
+No DatabaseName element found, use read in results at own risk.
+MSGFPlusAdapter took 01:55:58 h (wall), 52.59 s (CPU), 2.10 s (system), 50.49 s (user).
+Mapping 97103 peptides to 246176 proteins.
+
+Aho-Corasick done:
+  found 122625 hits for 92840 of 97103 peptides (time: 13.203928 s (wall), 243.42 s (CPU)).
+Using suffix array to find ambiguous matches...
+... for 4263 unmatched peptide(s)...
+... in all 246176 protein(s).
+Peptide hits passing enzyme filter: 122625
+     ... rejected by enzyme filter: 49594
+Unmatched peptide: PAATQAVLQNDKTPDNTVTVFAGQDKEATAK
+Unmatched peptide: NQAAATVGSASDTPSTLTTLVPLPVPTTISPR
+Unmatched peptide: PNEYFTEDRQEAPLITDR
+<Unmatched peptide: NQAAATVGSASDTPSTLTTLVPLPVPTTISPR> occurred 2 times
+Unmatched peptide: SDAIDVAFPVEDADKLAAAFGLSSLAK
+Unmatched peptide: PAPPPPAPKPAVPEVDPAVELAR
+Unmatched peptide: NQAAATVGSASDTPSTLTTLVPLPVPTTISPR
+Unmatched peptide: VNSDFQEPGLVTPLGTLLR
+Unmatched peptide: PIAPNTNPDGSDNPEGR
+Unmatched peptide: PAATQAVLQNDKTPDNTVTVFAGQDK
+Unmatched peptide: TLLIEYTDASFTTVKPR
+Unmatched peptide: PNEYFTEDRQEAPLITDR
+Unmatched peptide: PAAETPLSALVLGVLAER
+Unmatched peptide: PAGSTSGGSTAPTPGPAGPVK
+Unmatched peptide: ...
+-----------------------------------
+Peptides statistics
+
+  target/decoy:
+    match to target DB only: 67051
+    match to decoy DB only : 25475
+    match to both          : 314
+
+  mapping to proteins:
+    no match (to 0 protein)         : 4263
+    unique match (to 1 protein)     : 75487
+    non-unique match (to >1 protein): 17353
+PeptideIndexer found unmatched peptides, which could not be associated to a protein.
+Potential solutions:
+   - check your FASTA database for completeness
+   - set 'enzyme:specificity' to match the identification parameters of the search engine
+   - some engines (e.g. X! Tandem) employ loose cutting rules generating non-tryptic peptides;
+     if you trust them, disable enzyme specificity
+   - increase 'aaa_max' to allow more ambiguous amino acids
+   - as a last resort: use the 'allow_unmatched' option to accept unmatched peptides
+     (note that unmatched peptides cannot be used for FDR calculation or quantification)
+Result files were written, but PeptideIndexer will exit with an error code.
+-----------------------------------
+Protein statistics
+
+  new proteins: 0
+  orphaned proteins: 2921 (all removed)
+PeptideIndexer took 01:11 m (wall), 05:02 m (CPU), 02:46 m (system), 02:15 m (user).
+Invalid string parameter value '' for parameter 'PSM' given! Valid values are: 'true,false'. Updating failed!
+Parameters passed to 'FalseDiscoveryRate' are invalid. To prevent usage of wrong defaults, please update/fix the parameters!
