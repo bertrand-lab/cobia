@@ -1,0 +1,2 @@
+column_length,column_diameter,column_pore_size,second_solvent_concentration_a,second_solvent_concentration_b,gradient_0,gradient_1,gradient_2,flow_rate,code_format,linear,model
+250,0.075,100,0,80,0,100,100,0.0003,aas,FALSE,FA
