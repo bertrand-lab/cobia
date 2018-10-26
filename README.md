@@ -1,6 +1,6 @@
 ## *cobia*: Prediction and consequences of cofragmentation in metaproteomics
 
-*cobia* is a computational tool to predict the number of cofragmenting ions in a mass spectrometry experiment, focused on metaproteomics. Specifically, we tried to examine the influence of *co*fragmentation *bia*s on metaproteomics.
+*cobia* is a computational tool to predict the number of cofragmenting ions in a mass spectrometry experiment, focused on metaproteomics. Specifically, we calculate 'cofragmentation scores' which represent identification and quantification bias using mass spectrometry based metaproteomics.
 
 ### Requirements
 
