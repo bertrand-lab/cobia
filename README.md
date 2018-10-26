@@ -94,7 +94,7 @@ cobia cofrag_prediction -f lc_predicted_output.csv -l dda_parameters.csv -output
 
 #### Targeted Cofragmentation Prediction
 
-In a targeted approach, the number of cofragmenting ions for a subset of peptides in the potential proteome will be determined. This approach is much faster than the global approach, so we do not use sparse sampling or parallelization. Peptides must be supplied as a .csv file with the column header 'pep_seq'. For example:
+In a targeted approach, the number of cofragmenting ions for a subset of peptides in the potential proteome will be determined. This approach is much faster than the global approach, so we do not use sparse sampling or parallelization. Peptides must be supplied as a .csv file with the column header 'pep_seq' (for an example of this file format, look above in `example-data-files/`. Example data use:
 
 ```python
 cobia cofrag_prediction -f lc_predicted_output.csv -l dda_parameters.csv -n output_name --global targeted -t target_peps.csv
