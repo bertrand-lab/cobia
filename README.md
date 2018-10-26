@@ -45,25 +45,26 @@ Peptide modifications are done using [pyteomics](https://pyteomics.readthedocs.i
 
 Retention time prediction can be done either with [BioLCCC](http://theorchromo.ru/docs/) (part of [pyteomics](https://pyteomics.readthedocs.io/en/latest/)) or using the OpenMS tool RTModel and RTPredict. If you want to use RTModel or RTPredict, [OpenMS](https://www.openms.de/) should be installed.
 
-BioLCCC retention time prediction requires an LC parameter file containing the following characteristics (but see the BioLCCC documentation for details):
+BioLCCC retention time prediction requires an LC parameter file (see `example-data-files/` for the structure of this LC input file) containing the following characteristics (but see the BioLCCC documentation for details):
 
-* column_length
-* column_diameter
-* second_solvent_concentration_a
-* second_solvent_concentration_b
-* gradient_0
-* gradient_1
-* gradient_2
-* flow_rate
-* code_format
-* linear
-* model
+* column_length (mm) 
+* column_diameter (mm)
+* column_pore_size (A)
+* second_solvent_concentration_a (%)
+* second_solvent_concentration_b (%)
+* gradient_0 (%)
+* gradient_1 (%) 
+* gradient_2 (min)
+* flow_rate (ml/min)
+* code_format (right now the setting should always be 'aas', for amino acids)
+* linear (TRUE or FALSE)
+* model (FA or TFA)
 
 ```python
 cobia peptide_mod_biolccc_rt_prediction -f potential_proteome.fasta -l lc_parameter_file.csv -g custom_gradient_file.csv -n output_name
 ```
 
-Alternatively, you can train a support vector machine model with RTModel. This requires a mass spectrometry experiment being completed, which will result in a subset of the peptides in the sample to be observed. These retention times and peptides will be used to train an SVM, and RTPredict can be used to then predict the retention times of the potential proteome. Two examples can be found in `testing-scripts/` (above), called 'svm_models_kleiner.sh'; but the documentation for OpenMS RTModel talks in more detail. 
+Alternatively, you can train a support vector machine model with RTModel. This requires a mass spectrometry experiment being completed, which will result in a subset of the peptides in the sample to be observed. These retention times and peptides will be used to train an SVM, and RTPredict can be used to then predict the retention times of the potential proteome. Two examples can be found in `testing-scripts/` (above), called `svm_models_kleiner.sh`; but the documentation for OpenMS RTModel talks in more detail. 
 
 Once you have trained RTModel, you can digest your potential protome with:
 
@@ -81,7 +82,7 @@ This output can then be used for cofragmentation prediction as below.
 
 ### Cofragmention Prediction
 
-We use a relatively simple approach, essentially counting the number of isobaric (+/- precursor selection window / 2) and co-eluting peptides from the *potential*  proteome (ie. the fasta file). One key parameter is the ion peak width. In the paper, we've estimated the ion peak width with a simple linear model derived from Hsieh *et al* (2013) mean ion peak width as a function of gradient and column length (`peak width ~ 0.01978 - 0.0005563*(Column Length) + 0.0065488*(Gradient Length).
+We use a relatively simple approach, essentially counting the number of isobaric (+/- precursor selection window / 2) and co-eluting peptides from the *potential*  proteome (ie. the fasta file). One key parameter is the ion peak width. In the paper, we've estimated the ion peak width with a simple linear model derived from Hsieh *et al* (2013) mean ion peak width as a function of gradient and column length (`peak width ~ 0.01978 - 0.0005563*(Column Length) + 0.0065488*(Gradient Length). The parameter input file structure is similar to the LC prediction for BioLCCC input file, see `example-data-files/` for the structure.
 
 #### Global Cofragmentation Prediction
 
