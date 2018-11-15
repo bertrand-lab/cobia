@@ -82,7 +82,7 @@ This output can then be used for cofragmentation prediction as below.
 
 ### Cofragmention Prediction
 
-We use a relatively simple approach, essentially counting the number of isobaric (+/- precursor selection window / 2) and co-eluting peptides from the *potential*  proteome (ie. the fasta file). One key parameter is the ion peak width. In the paper, we've estimated the ion peak width with a simple linear model derived from Hsieh *et al* (2013) mean ion peak width as a function of gradient and column length (`peak width ~ 0.01978 - 0.0005563*(Column Length) + 0.0065488*(Gradient Length). The parameter input file structure is similar to the LC prediction for BioLCCC input file, see `example-data-files/` for the structure.
+We use a relatively simple approach, essentially counting the number of isobaric (+/- precursor selection window / 2) and co-eluting peptides from the *potential*  proteome (ie. the fasta file). One key parameter is the ion peak width. In the paper, we've estimated the ion peak width with a simple linear model derived from Hsieh *et al* (2013) mean ion peak width as a function of gradient and column length (`peak width ~ 0.01978 - 0.0005563*(Column Length) + 0.0065488*(Gradient Length`). The parameter input file structure is similar to the LC prediction for BioLCCC input file, see `example-data-files/` for the structure.
 
 #### Global Cofragmentation Prediction
 
@@ -94,7 +94,7 @@ cobia cofrag_prediction -f lc_predicted_output.csv -l dda_parameters.csv -output
 
 #### Targeted Cofragmentation Prediction
 
-In a targeted approach, the number of cofragmenting ions for a subset of peptides in the potential proteome will be determined. This approach is much faster than the global approach, so we do not use sparse sampling or parallelization. Peptides must be supplied as a .csv file with the column header 'pep_seq' (for an example of this file format, look above in `example-data-files/`. Example data use:
+In a targeted approach, the number of cofragmenting ions for a subset of peptides in the potential proteome will be determined. This approach is much faster than the global approach, so we do not use sparse sampling or parallelization. Importantly, LC prediction as described above must still be run on the entire potential proteome first. Peptides must be supplied as a .csv file with the column header 'pep_seq' (for an example of this file format, look above in `example-data-files/`. Example data use:
 
 ```python
 cobia cofrag_prediction -f lc_predicted_output.csv -l dda_parameters.csv -n output_name --global targeted -t target_peps.csv
