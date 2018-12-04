@@ -21,7 +21,7 @@ from argparse import ArgumentParser
 
 #args = parser.parse_args()
 
-def subsample_idxml(filename, output_name, subset)
+def subsample_idxml(filename, output_name, subset):
 
 # Goal of script:
 ## Read in idXML files
