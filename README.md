@@ -11,6 +11,7 @@ The installation instructions assume a linux environment, although they can be a
 * Retention time prediction:
   - `BioLCCC` *or* RTModel/RTPredict from OpenMS
 * Python 2.7 (for compatability with BiolCCC)
+* `pyopenms` (for subsampling retention times from an idXML file)
 
 ### Installation
 
