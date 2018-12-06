@@ -30,6 +30,7 @@ conda create --name pyteo_27 python=2.7 pandas
 conda activate pyteo_27
 pip install pyteomics.biolccc
 pip install pyteomics
+pip install pyopenms
 ```
 
 ### Peptide Modifications
