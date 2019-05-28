@@ -1,0 +1,7 @@
+max_injection_time,precursor_selection_window,ion_peak_width,number_of_parallel,every_nth
+"0    1
+Name: max_injection_time, dtype: int64","0    2.5
+Name: precursor_selection_window, dtype: float64","0    2.5
+Name: ion_peak_width, dtype: float64","0    1
+Name: number_of_parallel, dtype: int64","0    1
+Name: every_nth, dtype: int64"
