@@ -35,7 +35,7 @@ def subsample_idxml(filename, output_name, subset):
 
     # rt vector and seq vector
     pep_rts = []
-     pep_seqs = []
+    pep_seqs = []
 
     for peptide_id in peptide_ids:
         pep_rts.append(peptide_id.getRT())

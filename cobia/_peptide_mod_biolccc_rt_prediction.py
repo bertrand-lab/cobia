@@ -154,7 +154,7 @@ def peptide_mod_biolccc_rt_prediction(lc_params_file, fasta_file_name, custom_gr
 	stars_removed_peps = []
 	for starred_peptide in seq_vec_terms:
             line_new = starred_peptide
-            if '\*' in line_new:
+            if '*' in line_new:
                 continue
 	    #some peptides have unknown amino acids, remove them.
 	    if 'X' in line_new:
@@ -182,6 +182,9 @@ def peptide_mod_biolccc_rt_prediction(lc_params_file, fasta_file_name, custom_gr
 	        continue
 	    if 'U' in seq_vec_terms[contig_name]:
 	        continue
+            if '*' in seq_vec_terms[contig_name]:
+                continue
+
 	    temp_contig = contig_vec[contig_name]
 	    contig_vec_no_x.append(temp_contig)
 

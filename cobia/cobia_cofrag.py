@@ -11,6 +11,8 @@ Output files: (1) cofragmentation scores associated with peptides (2) parameter 
 @author: J. Scott P. McCain
 
 """
+print('prediction underway')
+
 import os
 import pandas as pd
 import numbers
@@ -21,9 +23,11 @@ import csv
 from sys import argv
 import math
 
-from cobia_parallel import parallel_split
-from cobia_functions import cofrag_ion_counter_sparse_para
-from cobia_functions import cofrag_ion_counter_targeted
+from .cobia_parallel import parallel_split
+from .cobia_functions import cofrag_ion_counter_sparse_para
+from .cobia_functions import cofrag_ion_counter_targeted
+
+print('imported donezo')
 
 def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 
@@ -134,7 +138,6 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 	peptide_unique_sorted = peptide_unique.sort_values(['rts'])
 
 	# if doing a global cofragmentation assessment
-
 	if globalcofrag == 'global':
 	    # Splitting the dataset for parallelization:
 	    para_test_df = parallel_split(p_comp = number_of_parallel,
@@ -194,7 +197,20 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 	    cofrag_df = pd.concat([sim_series_mean, sim_series_median, sim_series_sd, target_df], axis = 1)
 	if globalcofrag == 'global':
 	    cofrag_df = pd.concat([sim_series_mean, sim_series_median, sim_series_sd, peptide_master], axis = 1)
-
+            # cofragmentation scores were not computed for peptides that are found >1 times. But we want the output file to have scores even for peptides that are found >1 times.
+            # here we loop through the reported dataframe to fill in the scores of the peptides with non
+            for index, row in cofrag_df.iterrows():
+                if pd.isna(row["mean_cofrag_score"]) == True:
+                    # print(row)
+                    # find peptide sequence that was scored:
+                    # subset cofrag_df to get the target peptide sequence
+                    sub_cofrag_df = cofrag_df.loc[(cofrag_df.peptide_sequence == row['peptide_sequence']),]
+                    sub_cofrag_df_drop_na = sub_cofrag_df.dropna()
+                    print(sub_cofrag_df_drop_na)
+                    row["mean_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["mean_cofrag_score"]
+                    row["median_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["median_cofrag_score"]
+                    row["sd_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["sd_cofrag_score"]
+                    # print(row)
 	# Writing file names with key parameters in the actual name.
 	file_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_co-sim.csv'
 	param_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_params.csv'

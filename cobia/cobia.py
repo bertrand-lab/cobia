@@ -16,13 +16,13 @@ import csv
 from sys import argv
 import argparse
 
-from cobia_cofrag import cobia_cofrag
-from cobia_parallel import parallel_split
-from cobia_functions import cofrag_ion_counter_sparse_para
-from cobia_functions import cofrag_ion_counter_targeted
-from _peptide_mod_biolccc_rt_prediction import peptide_mod_biolccc_rt_prediction
-from _openms_modelled_rt import openms_modelled_rt
-from _database_trypsin import database_trypsin
+from .cobia_cofrag import cobia_cofrag
+from .cobia_parallel import parallel_split
+from .cobia_functions import cofrag_ion_counter_sparse_para
+from .cobia_functions import cofrag_ion_counter_targeted
+from ._peptide_mod_biolccc_rt_prediction import peptide_mod_biolccc_rt_prediction
+from ._openms_modelled_rt import openms_modelled_rt
+from ._database_trypsin import database_trypsin
 
 def main():
 
@@ -55,7 +55,7 @@ def main():
 	database_trypsin_parser = subparsers.add_parser("database_trypsin")
 	database_trypsin_parser.add_argument("-f", "--file", dest = "filename", help = "Input fasta file of database (AA sequences)")
 	database_trypsin_parser.add_argument("-n", "--name", dest = "output_name", help = "Character string of .txt file output with all tryptic peptides from database")
-        database_trypsin_parser.add_argument("-c", "--add_contigs", dest = "add_contigs", help = 'TRUE or FALSE regarding contig IDs to be added to the output file. For RTPredict, choose FALSE')
+        database_trypsin_parser.add_argument("-c", "--add_contigs", dest = "add_contigs", help = '"write" or "no-write" regarding contig IDs to be added to the output file. For RTPredict, choose FALSE. This setting is required!')
 
 	# Subparser for peptide modification script after RTModel from OpenMS
 	openms_modelled_rt_parser = subparsers.add_parser("openms_modelled_rt")

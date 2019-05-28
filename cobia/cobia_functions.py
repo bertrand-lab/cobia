@@ -179,7 +179,7 @@ def cofrag_ion_counter_sparse_para(para_input_no, max_injection_time,
 
     return(return_dict)
 #%%
-if __name__ == "__main__":
-    _filter_ion_parcel()
-    cofrag_ion_counter_sparse_para()
-    cofrag_ion_counter_targeted()
+#if __name__ == "__main__":
+#    _filter_ion_parcel()
+#    cofrag_ion_counter_sparse_para()
+#    cofrag_ion_counter_targeted()

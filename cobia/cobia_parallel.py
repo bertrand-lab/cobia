@@ -112,5 +112,5 @@ def parallel_split(p_comp,
 
     return(chunked_datasets)
 
-if __name__ == "__main__":
-    parallel_split()
+#if __name__ == "__main__":
+#    parallel_split()

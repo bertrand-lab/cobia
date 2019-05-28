@@ -45,7 +45,7 @@ def openms_modelled_rt(rtfilename, output_name):
 	for starred_peptide in seq_vec_terms:
             line_new = starred_peptide
             # some peptides have unknown amino acids denoted as *, remove them. 
-            if '\*' in line_new:
+            if '*' in line_new:
                 continue
 	    #some peptides have unknown amino acids, remove them.
 	    if 'X' in line_new:
@@ -65,18 +65,6 @@ def openms_modelled_rt(rtfilename, output_name):
 	for z_peptide in b_removed_peps:
 	    line_new = re.sub('Z', 'Q', z_peptide)
 	    z_removed_peps.append(line_new)
-
-	# removing contigs that have an unknown amino acid (X), or selenocysteine ('U')
-	#contig_vec_no_x = []
-	#for contig_name in range(len(contig_vec)):
-	#    if 'X' in seq_vec_terms[contig_name]:
-	#        continue
-	#    if 'U' in seq_vec_terms[contig_name]:
-	#        continue
-	#    temp_contig = contig_vec[contig_name]
-	#    contig_vec_no_x.append(temp_contig)
-
-	# #%%
 
 	# #modifying peptides: oxidation of methionine, carbamidomethylation of cysteine, acetylation of N terminal (this one was done upstream)
 
