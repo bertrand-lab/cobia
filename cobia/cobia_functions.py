@@ -15,6 +15,8 @@ import pandas as pd
 import numbers
 import numpy as np
 
+print('loading functions')
+
 # helper function to filter a peptide dataframe by an injection bin
 def _filter_ion_parcel(peptide_df, filtered_injection_bin_i):
     if type(filtered_injection_bin_i) != pd._libs.interval.Interval:
@@ -179,7 +181,7 @@ def cofrag_ion_counter_sparse_para(para_input_no, max_injection_time,
 
     return(return_dict)
 #%%
-#if __name__ == "__main__":
-#    _filter_ion_parcel()
-#    cofrag_ion_counter_sparse_para()
-#    cofrag_ion_counter_targeted()
+if __name__ == "__main__":
+    _filter_ion_parcel()
+    cofrag_ion_counter_sparse_para()
+    cofrag_ion_counter_targeted()

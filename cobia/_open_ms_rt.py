@@ -21,6 +21,8 @@ from argparse import ArgumentParser
 
 #args = parser.parse_args()
 
+print('_open_ms_rt.py')
+
 def subsample_idxml(filename, output_name, subset):
 
 # Goal of script:

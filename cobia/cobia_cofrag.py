@@ -11,7 +11,7 @@ Output files: (1) cofragmentation scores associated with peptides (2) parameter 
 @author: J. Scott P. McCain
 
 """
-print('prediction underway')
+print('BLAH pre2diction underway')
 
 import os
 import pandas as pd
@@ -27,7 +27,7 @@ from .cobia_parallel import parallel_split
 from .cobia_functions import cofrag_ion_counter_sparse_para
 from .cobia_functions import cofrag_ion_counter_targeted
 
-print('imported donezo')
+print('2 imported donezo')
 
 def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 
@@ -201,16 +201,17 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
             # here we loop through the reported dataframe to fill in the scores of the peptides with non
             for index, row in cofrag_df.iterrows():
                 if pd.isna(row["mean_cofrag_score"]) == True:
-                    # print(row)
+                    print(row)
+                    print(index)
                     # find peptide sequence that was scored:
                     # subset cofrag_df to get the target peptide sequence
                     sub_cofrag_df = cofrag_df.loc[(cofrag_df.peptide_sequence == row['peptide_sequence']),]
                     sub_cofrag_df_drop_na = sub_cofrag_df.dropna()
                     print(sub_cofrag_df_drop_na)
-                    row["mean_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["mean_cofrag_score"]
-                    row["median_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["median_cofrag_score"]
-                    row["sd_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["sd_cofrag_score"]
-                    # print(row)
+                    cofrag_df.loc[index, "mean_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["mean_cofrag_score"]
+                    cofrag_df.loc[index, "median_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["median_cofrag_score"]
+                    cofrag_df.loc[index, "sd_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["sd_cofrag_score"]
+                    print(cofrag_df)
 	# Writing file names with key parameters in the actual name.
 	file_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_co-sim.csv'
 	param_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_params.csv'

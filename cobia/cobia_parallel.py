@@ -13,10 +13,7 @@ import numbers
 import multiprocessing as mp
 import warnings
 
-#tester2 = peptide_unique
-#tester3 = tester2.sort_values(by = 'rts')
-
-#%%
+print('loading parallel')
 
 def parallel_split(p_comp,
                    peptide_df):
@@ -112,5 +109,5 @@ def parallel_split(p_comp,
 
     return(chunked_datasets)
 
-#if __name__ == "__main__":
-#    parallel_split()
+if __name__ == "__main__":
+    parallel_split()
