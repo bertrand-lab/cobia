@@ -13,7 +13,7 @@ print('head of pepmod')
 import pyteomics
 
 from pyteomics import electrochem
-from pyteomics import biolccc
+#from pyteomics import biolccc
 from pyteomics import mass
 import re
 from argparse import ArgumentParser

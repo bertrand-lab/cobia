@@ -207,11 +207,11 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
                     # subset cofrag_df to get the target peptide sequence
                     sub_cofrag_df = cofrag_df.loc[(cofrag_df.peptide_sequence == row['peptide_sequence']),]
                     sub_cofrag_df_drop_na = sub_cofrag_df.dropna()
-                    print(sub_cofrag_df_drop_na)
+                    if(len(sub_cofrag_df.index) == 1):
+                        continue
                     cofrag_df.loc[index, "mean_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["mean_cofrag_score"]
                     cofrag_df.loc[index, "median_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["median_cofrag_score"]
                     cofrag_df.loc[index, "sd_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["sd_cofrag_score"]
-                    print(cofrag_df)
 	# Writing file names with key parameters in the actual name.
 	file_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_co-sim.csv'
 	param_name = str(custom_name) + '_mi-' + str(max_injection_time) + '_ipw-' + str(ion_peak_width) + '_para-' + str(number_of_parallel) + '_params.csv'
