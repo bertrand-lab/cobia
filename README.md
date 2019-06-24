@@ -34,4 +34,4 @@ pip install pyteomics
 pip install pyopenms
 ```
 
-To use *cobia*, please see the vignette above!
+To use *cobia*, please see the how-to above!
