@@ -43,8 +43,8 @@ def subsample_idxml(filename, output_name, subset):
             pep_seq_i = hit.getSequence()
             pep_seqs.append(pep_seq_i)
 
-    pep_rts_sub = pep_rts[::subsetnth]
-    pep_seqs_sub = pep_seqs[::subsetnth]
+    pep_rts_sub = pep_rts[::subset]
+    pep_seqs_sub = pep_seqs[::subset]
 
     # combining subsampled pep seq and rt lists
     zseq = zip(pep_seqs_sub, pep_rts_sub)
