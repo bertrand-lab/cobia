@@ -8,17 +8,12 @@ mass, and RT.
 
 """
 
-print('head of pepmod')
-
 import pyteomics
-
 from pyteomics import electrochem
 #from pyteomics import biolccc
 from pyteomics import mass
 import re
 from argparse import ArgumentParser
-
-print('_peptide_mod_biolccc...py')
 
 #Dictionary of the Genetic Code#
 ### This function (Codon_to_Aminoacid) is written by Noor Youssef. Perhaps later on we would want to use codon fasta files with

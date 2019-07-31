@@ -19,8 +19,6 @@ from sys import argv
 import numbers
 import os
 
-print('_openms_modelled_rt.py')
-
 #from argparse import ArgumentParser
 
 #inputting command line arguments

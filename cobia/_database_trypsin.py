@@ -21,8 +21,6 @@ import numbers
 import os
 import csv
 
-print('loading database_trypsin.py')
-
 #inputting command line arguments
 
 #parser = ArgumentParser()

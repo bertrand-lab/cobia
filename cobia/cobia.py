@@ -33,6 +33,7 @@ from .cobia_functions import cofrag_ion_counter_targeted
 from ._peptide_mod_biolccc_rt_prediction import peptide_mod_biolccc_rt_prediction
 from ._openms_modelled_rt import openms_modelled_rt
 from ._database_trypsin import database_trypsin
+from ._open_ms_rt import subsample_idxml
 
 def main():
 

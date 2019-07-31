@@ -21,8 +21,6 @@ from argparse import ArgumentParser
 
 #args = parser.parse_args()
 
-print('_open_ms_rt.py')
-
 def subsample_idxml(filename, output_name, subset):
 
 # Goal of script:
@@ -33,7 +31,7 @@ def subsample_idxml(filename, output_name, subset):
     # Reading in file
     protein_ids = []
     peptide_ids = []
-    IdXMLFile().load(args.filename, protein_ids, peptide_ids)
+    IdXMLFile().load(filename, protein_ids, peptide_ids)
 
     # rt vector and seq vector
     pep_rts = []
@@ -45,14 +43,18 @@ def subsample_idxml(filename, output_name, subset):
             pep_seq_i = hit.getSequence()
             pep_seqs.append(pep_seq_i)
 
-    pep_rts_sub = pep_rts[::args.subsetnth]
-    pep_seqs_sub = pep_seqs[::args.subsetnth]
+    pep_rts_sub = pep_rts[::subsetnth]
+    pep_seqs_sub = pep_seqs[::subsetnth]
 
     # combining subsampled pep seq and rt lists
     zseq = zip(pep_seqs_sub, pep_rts_sub)
 
-    with open(args.output_name, 'w') as f:
+    with open(output_name, 'w') as f:
         writer = csv.writer(f, delimiter = '\t')
         writer.writerows(zseq)
 
     quit()
+
+if __name__ == "__main__":
+    subsample_idxml()
+

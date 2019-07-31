@@ -13,8 +13,6 @@ import numbers
 import multiprocessing as mp
 import warnings
 
-print('loading parallel')
-
 def parallel_split(p_comp,
                    peptide_df):
 

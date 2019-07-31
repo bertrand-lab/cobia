@@ -11,7 +11,6 @@ Output files: (1) cofragmentation scores associated with peptides (2) parameter 
 @author: J. Scott P. McCain
 
 """
-print('BLAH pre2diction underway')
 
 import os
 import pandas as pd
@@ -26,8 +25,6 @@ import math
 from .cobia_parallel import parallel_split
 from .cobia_functions import cofrag_ion_counter_sparse_para
 from .cobia_functions import cofrag_ion_counter_targeted
-
-print('2 imported donezo')
 
 def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 
@@ -49,7 +46,6 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 	pep_list = peptide_master['peptide_sequence'].str.split('-').tolist()
         charge_state = []
         three_indicators = ['H', 'RP', 'KP']
-        print(pep_list[1:100])
         # removing the -OH and just getting the peptide
 	pep_list_real = []
 	for element_i in pep_list:
@@ -67,15 +63,11 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
                     charge_state.append(2)
             elif math.isnan(element_i):
                 charge_state.append('')
-	print(charge_state[1:100])
-	print(type(charge_state[1]))
+
 	# converting charge state integers to floats
 	charge_state_float = [float(i) for i in charge_state]
 	#adjusting mz for different charge states by peptide
         peptide_master['mz'] = peptide_master['mass']/charge_state_float
-
-	print(peptide_master['mz'].tolist()[1:100])
-	print(peptide_master['mass'].tolist()[1:100])
 
 	# Filtering out ions between 50 and 2000 mz
 	peptide_mz_filter = peptide_master.query('mz > 50 & mz < 2000')
@@ -201,13 +193,11 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
             # here we loop through the reported dataframe to fill in the scores of the peptides with non
             for index, row in cofrag_df.iterrows():
                 if pd.isna(row["mean_cofrag_score"]) == True:
-                    print(row)
-                    print(index)
                     # find peptide sequence that was scored:
                     # subset cofrag_df to get the target peptide sequence
                     sub_cofrag_df = cofrag_df.loc[(cofrag_df.peptide_sequence == row['peptide_sequence']),]
                     sub_cofrag_df_drop_na = sub_cofrag_df.dropna()
-                    if(len(sub_cofrag_df.index) == 1):
+                    if(sub_cofrag_df.isnull().sum()[0] == len(sub_cofrag_df.index)):
                         continue
                     cofrag_df.loc[index, "mean_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["mean_cofrag_score"]
                     cofrag_df.loc[index, "median_cofrag_score"] = sub_cofrag_df_drop_na.iloc[0]["median_cofrag_score"]
