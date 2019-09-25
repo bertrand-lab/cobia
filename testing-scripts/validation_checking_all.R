@@ -86,14 +86,14 @@ space_mouse_oligo2 <- cofrag_processor(cofrag_output_df = space_mouse_cofrag_oli
 length(space_mouse_oligo2$prote_d)
 
 number_of_unseen(space_mouse_oligo2)
-space_mouse_n <- "italic(N)[italic(unobserved)] == 701591"
-space_mouse_n_sub <- "italic(N)[italic(observed)] == 9801"
+space_mouse_n <- "italic(N)[italic(unobserved)] == 632447"
+space_mouse_n_sub <- "italic(N)[italic(observed)] == 12036"
 space_mouse_oligo2_p8 <- space_mouse_oligo2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
   geom_histogram(aes(fill = prote_d)) + 
   scale_y_log10() + 
   theme_bw() +
-  ylab('') +
+  ylab('log(Count)') +
   # annotate("text", label = paste("beta == ", -0.12, "(0.009)"), y = 1e8, x = 13, parse = TRUE, size = 7) +
   # xlab('Predicted # Cofragmenting Peptides') +
   xlab('') +
@@ -118,19 +118,19 @@ prostate_cancer_oligo2 <- cofrag_processor(cofrag_output_df = prostate_cancer_co
 length(prostate_cancer_oligo2$prote_d)
 
 number_of_unseen(prostate_cancer_oligo2)
-prostate_cancer_n <- "italic(N)[italic(unobserved)] == 696945"
-prostate_cancer_n_sub <- "italic(N)[italic(observed)] == 903"
+prostate_cancer_n <- "italic(N)[italic(unobserved)] == 631861"
+prostate_cancer_n_sub <- "italic(N)[italic(observed)] == 1105"
 prostate_cancer_oligo2_p7 <- prostate_cancer_oligo2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
   geom_histogram(aes(fill = prote_d)) + 
   scale_y_log10() + 
   theme_bw() +
-  ylab('') +
+  ylab('log(Count)') +
   # annotate("text", label = paste("beta == ", -0.12, "(0.009)"), y = 1e8, x = 13, parse = TRUE, size = 7) +
   # xlab('Predicted # Cofragmenting Peptides') +
   xlab('') +
-  annotate("text", x = 4.5, y = Inf, vjust = 3, label = prostate_cancer_n, parse = TRUE, size = 3, colour = 'grey62') +
-  annotate("text", x = 4.5, y = Inf, vjust = 4.5, label = prostate_cancer_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
+  annotate("text", x = 5, y = Inf, vjust = 3, label = prostate_cancer_n, parse = TRUE, size = 3, colour = 'grey62') +
+  annotate("text", x = 5, y = Inf, vjust = 4.5, label = prostate_cancer_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
   ggtitle('A) Prostate Cancer Biomarkers') +
   scale_fill_manual(values = c("grey62", "grey24")) +
   theme(legend.position = "none", title = element_text(size = 7.5));prostate_cancer_oligo2_p7
@@ -151,20 +151,20 @@ ecoli_oligo2 <- cofrag_processor(cofrag_output_df = ecoli_cofrag_oligo, observed
 length(ecoli_oligo2$prote_d)
 
 number_of_unseen(ecoli_oligo2)
-ecoli_n <- "italic(N)[italic(unobserved)] == 87162"
-ecoli_n_sub <- "italic(N)[italic(observed)] == 13296"
+ecoli_n <- "italic(N)[italic(unobserved)] == 73974"
+ecoli_n_sub <- "italic(N)[italic(observed)] == 16421"
 ecoli_oligo2_p9 <- ecoli_oligo2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
   geom_histogram(aes(fill = prote_d), binwidth = 0.1) + 
   scale_y_log10() + 
   theme_bw() +
-  ylab('') +
+  ylab('log(Count)') +
   # annotate("text", label = paste("beta == ", -0.12, "(0.009)"), y = 1e8, x = 13, parse = TRUE, size = 7) +
   # xlab('Predicted # Cofragmenting Peptides') +
-  xlab('') +
+  xlab('Cofragmentation Score') +
   annotate("text", x = 2.35, y = Inf, vjust = 3, label = ecoli_n, parse = TRUE, size = 3, colour = 'grey62') +
   annotate("text", x = 2.35, y = Inf, vjust = 4.5, label = ecoli_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
-  ggtitle('C) E. coli') +
+  ggtitle(expression(paste("C) ", italic("E. coli")))) +
   scale_fill_manual(values = c("grey62", "grey24")) +
   theme(legend.position = "none", title = element_text(size = 7.5));ecoli_oligo2_p9
 
@@ -189,8 +189,9 @@ kleiner_cofrag_460_oligo2 <- cofrag_processor(cofrag_output_df = kleiner_cofrag_
 kleiner_cofrag_460_linear2 <- cofrag_processor(cofrag_output_df = kleiner_cofrag_460_linear, observed_peps = run1_oms$sequence)
 
 number_of_unseen(kleiner_cofrag_460_oligo2)
-kleiner460_n <- "italic(N)[italic(unobserved)] == 2201822"
-kleiner460_n_sub <- "italic(N)[italic(observed)] == 5921"
+number_of_unseen(kleiner_cofrag_460_rbf2)
+kleiner460_n <- "italic(N)[italic(unobserved)] == 1959790"
+kleiner460_n_sub <- "italic(N)[italic(observed)] == 7103"
 kleiner_460_p2 <- kleiner_cofrag_460_oligo2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
   geom_histogram(aes(fill = prote_d)) + 
@@ -269,8 +270,8 @@ glm_kleiner260_linear_rescale_summary <- summary(glm_kleiner260_linear_rescale)
 glm_kleiner260_linear_exp_summary <- summary(glm_kleiner260_linear_exp)
 
 number_of_unseen(kleiner_cofrag_260_oligo2)
-kleiner260_n <- "italic(N)[italic(unobserved)] == 2196645"
-kleiner260_n_sub <- "italic(N)[italic(observed)] == 11098"
+kleiner260_n <- "italic(N)[italic(unobserved)] == 1953656"
+kleiner260_n_sub <- "italic(N)[italic(observed)] == 13237"
 kleiner_260_p1 <- kleiner_cofrag_260_oligo2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
   geom_histogram(aes(fill = prote_d), binwidth = 0.2) + 
@@ -280,8 +281,8 @@ kleiner_260_p1 <- kleiner_cofrag_260_oligo2 %>%
   # annotate("text", label = paste("beta == ", -0.071, "(0.013)"), 
   # y = 1e9, x = 7, parse = TRUE, size = 6) +
   # xlab('Predicted # Cofragmenting Peptides') +
-  annotate("text", x = 7, y = Inf, vjust = 3, label = kleiner260_n, parse = TRUE, size = 3, colour = 'grey62') +
-  annotate("text", x = 7, y = Inf, vjust = 4.5, label = kleiner260_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
+  annotate("text", x = 6, y = Inf, vjust = 3, label = kleiner260_n, parse = TRUE, size = 3, colour = 'grey62') +
+  annotate("text", x = 6, y = Inf, vjust = 4.5, label = kleiner260_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
   xlab('') +
   scale_fill_manual(values = c("grey62", "grey24")) +
   ggtitle('A) Mock Community (LC Run = 260 mins)') +
@@ -358,7 +359,7 @@ broberg_mt_p4 <- bro_co_mt2 %>%
   annotate("text", x = 250, y = Inf, vjust = 4.5, label = broberg_mt_n_sub, parse = TRUE, size = 3, colour = 'grey24') +
   # annotate("text", label = paste("beta == ", -0.021, "(0.0023)"), 
   # y = 1e7, x = 80, parse = TRUE, size = 6) +
-  xlab('') + theme(legend.position = "none", title = element_text(size = 7.5));broberg_mt_p4
+  xlab('Cofragmentation Score') + theme(legend.position = "none", title = element_text(size = 7.5));broberg_mt_p4
 # geom_density(alpha = 0.4)
 
 
@@ -371,6 +372,7 @@ broberg_mg_p3_oak <- bro_co_mg_oak2 %>%
   geom_histogram(aes(fill = prote_d), binwidth = 1) + 
   scale_y_log10() + 
   theme_bw() +
+  xlab('Cofragmentation Score') +
   ylab('log(Count)') +
   scale_fill_manual(values = c("grey62", "grey24")) +
   ggtitle('E) Diseased Oak Tree Genome + Metagenome') +
@@ -445,6 +447,7 @@ aylward_rt_cofrag_linear2 <- cofrag_processor(cofrag_output_df = aylward_rt_cofr
 ##
 
 number_of_unseen(aylward_rt_cofrag_oligo2)
+number_of_unseen(aylward_rt_cofrag_linear2)
 aylward_oligo_n <- "italic(N)[italic(unobserved)] == 2799709"
 aylward_oligo_n_sub <- "italic(N)[italic(observed)] == 63"
 aylward_p5_oligo <- aylward_rt_cofrag_oligo2 %>% 
@@ -452,7 +455,7 @@ aylward_p5_oligo <- aylward_rt_cofrag_oligo2 %>%
   geom_histogram(aes(fill = prote_d), binwidth = 1) + 
   scale_y_log10() + 
   theme_bw() +
-  ylab('') +
+  ylab('log(Count)') +
   # annotate("text", label = paste("beta == ", -0.043, "(0.16)"), 
   # y = 1e7, x = 7, parse = TRUE, size = 6) +
   xlab('Cofragmentation Score') + 
@@ -464,7 +467,7 @@ aylward_p5_oligo <- aylward_rt_cofrag_oligo2 %>%
   ggtitle('E) Ant Fungus Garden Metagenome');aylward_p5_oligo
 
 number_of_unseen(aylward_rt_cofrag_linear2)
-aylward_linear_n <- "italic(N)[italic(unobserved)] == 2824883"
+aylward_linear_n <- "italic(N)[italic(unobserved)] == 2799709"
 aylward_linear_n_sub <- "italic(N)[italic(observed)] == 63"
 aylward_p5_linear <- aylward_rt_cofrag_linear2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
@@ -481,7 +484,7 @@ aylward_p5_linear <- aylward_rt_cofrag_linear2 %>%
   ggtitle('E) Ant Fungus Garden Metagenome');aylward_p5_linear
 
 number_of_unseen(aylward_rt_cofrag_rbf2)
-aylward_oligo_n <- "italic(N)[italic(unobserved)] == 2824883"
+aylward_oligo_n <- "italic(N)[italic(unobserved)] == 2799709"
 aylward_oligo_n_sub <- "italic(N)[italic(observed)] == 63"
 aylward_p5_rbf <- aylward_rt_cofrag_rbf2 %>% 
   ggplot(aes(mean_cofrag_score)) + 
@@ -570,13 +573,13 @@ grid.arrange(kleiner_260_p1, kleiner_460_p2, broberg_mg_p3, broberg_mt_p4,
 
 dev.off()
 
-jpeg("figures/main_validation_plots_single_proteome.jpeg", width=170/2, height=170/5, units="mm", res=850)
+jpeg("figures/main_validation_plots_single_proteome.jpeg", width=170/2, height=170, units="mm", res=850)
 
 grid.arrange(prostate_cancer_oligo2_p7, space_mouse_oligo2_p8, ecoli_oligo2_p9, nrow = 3)
 
 dev.off()
 
-ggsave(coef_graph, filename = "figures/main_coefficient_plot.jpeg", width = 170, height = 170/5, units = "mm")
+ggsave(coef_graph, filename = "figures/main_coefficient_plot.jpeg", width = 170, height = 170/2.5, units = "mm")
 
 
 # kernel plot -------------------------------------------------------------

@@ -125,8 +125,8 @@ bertrand_cofrag_func_specific_form <- format_contig_file(dataframe_input = bertr
 bertrand_cofrag_annot_tax <- inner_join(bertrand_cofrag_tax_specific_form, annot_contigs, by = 'contig')
 bertrand_cofrag_annot_func <- inner_join(bertrand_cofrag_func_specific_form, annot_contigs, by = 'contig')
 
-bertrand_cofrag_annot_no_group <- bertrand_cofrag_annot_tax[,-28]
-bertrand_cofrag_annot_no_kog_class <- bertrand_cofrag_annot_func[,-20]
+bertrand_cofrag_annot_no_group <- bertrand_cofrag_annot_tax[,-27]
+bertrand_cofrag_annot_no_kog_class <- bertrand_cofrag_annot_func[,-19]
 
 # note that there are some contigs that are in the cofragmentation output but NOT in the annotation output.
 # this is because there was an abundance threshold for whether or not to annotate a transcript from the 
@@ -300,7 +300,7 @@ cofrag_tax_plot_supp <- bertrand_cofrag_annot_tax %>%
              inherit.aes = FALSE) +
   theme_bw() +
   xlim(0, 50) +
-  xlab("Minimum Cofragmentation Score by ORF") +
+  xlab("Minimum Cofragmentation Score by Open Reading Frame") +
   ylab("Probability Density");cofrag_tax_plot_supp
 
 ggsave(cofrag_tax_plot_supp, 
@@ -323,7 +323,7 @@ cofrag_func_plot_supp <- bertrand_cofrag_annot_func %>%
              inherit.aes = FALSE) +
   theme_bw() +
   xlim(0, 50) +
-  xlab("Minimum Cofragmentation Score by ORF") +
+  xlab("Minimum Cofragmentation Score by Open Reading Frame") +
   ylab("Probability Density")
 
 ggsave(cofrag_func_plot_supp, 
@@ -373,7 +373,7 @@ group_together3 <- dplyr::rename(.data = group_together_2,
                                  subgrouping = group)
 kl_plot_df <- rbind(kog_class_together3, group_together3)
 
-kl_plot_final <- kl_plot_df %>% 
+kl_plot_df %>% 
   ggplot(aes(y = KL_divergence, x = log(n))) + 
   geom_ribbon(aes(ymin = KL_divergence05, ymax = KL_divergence95), alpha = 0.1) +
   geom_point() +
@@ -381,5 +381,4 @@ kl_plot_final <- kl_plot_df %>%
   facet_grid(~Grouping) +
   ylab("Kullback-Leibler Divergence") +
   xlab("log(Number of assigned ORFs per Grouping (taxonomic or functional))")
-
-ggsave(kl_plot_final, filename = "figures/main_kl-div-plot.png", width = 7.72, height = 3.68, units = "in")
+  

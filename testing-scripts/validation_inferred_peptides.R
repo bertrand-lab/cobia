@@ -10,7 +10,7 @@ bro_co_mt <- read.csv("data/broberg_data/broberg_mt_cofrag_mi-0.00833333_ipw-0.7
 bro_ms <- readxl::read_xlsx("data/broberg_data/Supplementary_Table_33.xlsx", skip = 4)
 
 # observed proteins (from protein inference) digested into peptides
-obs_protein <- read.table('data/broberg_data/mp_AT4_trypsin_digest.txt')
+obs_protein <- read.table('data/broberg_data/mp_AT4_single_trypsin_digest.txt')
 obs_protein <- unique(obs_protein)
 
 # formatting the peptide file (Supplementary File 33)
@@ -49,8 +49,8 @@ obs_protein2$rescale_cofrag_score <- scales::rescale(obs_protein2$mean_cofrag_sc
 obs_protein3$rescale_cofrag_score <- scales::rescale(obs_protein3$mean_cofrag_score, to = c(0, 100))
 
 number_of_unseen(obs_protein2)
-mginferred_n <- "italic(N)[italic(unobserved)] == 4210"
-mginferred_n_sub <- "italic(N)[italic(observed)] == 174"
+mginferred_n <- "italic(N)[italic(unobserved)] == 3313"
+mginferred_n_sub <- "italic(N)[italic(observed)] == 178"
 
 mg_inferred <- obs_protein2 %>% ggplot(aes(x = mean_cofrag_score)) + 
   geom_histogram(aes(fill = ms_observed), binwidth = 1) +
@@ -71,8 +71,8 @@ mg_inferred <- obs_protein2 %>% ggplot(aes(x = mean_cofrag_score)) +
 
 
 number_of_unseen(obs_protein3)
-mtinferred_n <- "italic(N)[italic(unobserved)] == 11579"
-mtinferred_n_sub <- "italic(N)[italic(observed)] == 461"
+mtinferred_n <- "italic(N)[italic(unobserved)] == 8957"
+mtinferred_n_sub <- "italic(N)[italic(observed)] == 473"
 mt_inferred <- obs_protein3 %>% ggplot(aes(x = mean_cofrag_score)) + 
   geom_histogram(aes(fill = ms_observed), binwidth = 1) +
   theme_bw() +
@@ -92,7 +92,7 @@ glm_peptide_restricted_mg <- glm(ms_observed ~ mean_cofrag_score, data = obs_pro
 glm_peptide_restricted_mt <- glm(ms_observed ~ mean_cofrag_score, data = obs_protein3, family = 'binomial')
 
 summary(glm_peptide_restricted_mg)
-# summary(glm_broberg_mg)
+summary(glm_broberg_mg)
 
 summary(glm_peptide_restricted_mt)
 # summary(glm_broberg_mt)
@@ -129,7 +129,7 @@ coef_graph_inferred <- ggplot(coef_diagram_inferred, aes(x = dataset, y = coef))
   # scale_x_discrete(limits = rev(levels(coef_diagram_inferred$char_id)));coef_graph_inferred
 
 
-jpeg("figures/main_validation_plot_inferred.jpeg", width=170/1.7, height=110, units="mm", res=850)
+jpeg("figures/main_validation_plot_inferred.jpeg", width=170/1.5, height=110, units="mm", res=850)
 
 grid.arrange(mg_inferred, mt_inferred, coef_graph_inferred)
 

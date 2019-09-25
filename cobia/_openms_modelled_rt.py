@@ -9,7 +9,7 @@ and masses which would then be used for cofragmentation prediction.
 
 import pyteomics
 from pyteomics import electrochem
-#from pyteomics import biolccc
+from pyteomics import biolccc
 from pyteomics import mass
 from pyopenms import *
 import re
@@ -19,17 +19,9 @@ from sys import argv
 import numbers
 import os
 
-#from argparse import ArgumentParser
-
-#inputting command line arguments
-
-#parser = ArgumentParser()
-#parser.add_argument("-f", "--file", dest = "rtfilename", help = "Input of csv file that contains tryptic peptides and retention times from database_tryptic.py")
-#parser.add_argument("-n", "--name", dest = "output_name", help = "Character string of output file name")
-#args = parser.parse_args()
+from argparse import ArgumentParser
 
 # read in txt file with RTs and Peptide sequences as seq_vec (list) and rt_vec (list)
-
 def openms_modelled_rt(rtfilename, output_name):
 
 	seq_rt_df = pd.read_csv(rtfilename, names = ['seq_rt'])
@@ -38,7 +30,7 @@ def openms_modelled_rt(rtfilename, output_name):
 	peptide_rts = df['rts'].tolist()
 
 	print('Removing xs and *s from seqs...')
-	#contig_vec_pd = pd.Series(contig_vec, name = 'contig')
+
 	seq_vec_terms = [central_pep + '-OH' for central_pep in seq_vec]
 	# removing contigs with unknown amino acid (X) or selenocysteine (U)
 	stars_removed_peps = []
@@ -77,10 +69,7 @@ def openms_modelled_rt(rtfilename, output_name):
 	    for blah in test_iso:
 	        mod_pep.append(blah)
 
-	#%%
-
 	# # modified amino acid dictionary for mass calculation
-
 	aa_comp = dict(mass.std_aa_comp)
 	aa_comp['Ac-'] = mass.Composition({'C': 2, 'H': 3, 'N': 0, 'O': 1, 'P': 0})
 	aa_comp['cam'] = mass.Composition({'C': 2, 'H': 3, 'N': 1, 'O': 1, 'P': 0})
@@ -88,14 +77,11 @@ def openms_modelled_rt(rtfilename, output_name):
 
 	#%%
 	# calculate peptide isoelectric points, masses, and charge at pH = 7
-
 	print('Calculating peptide physicochemical properties...')
 	iso_electric_points = []
 	pep_charges = []
 	pep_mass = []
 	i = 0
-
-	# print(mod_pep)
 
 	for peptide in mod_pep:
 	    peptide_isoelectric_point = electrochem.pI(peptide)
@@ -104,7 +90,6 @@ def openms_modelled_rt(rtfilename, output_name):
 	    pep_charges.append(peptide_charge)
 	    iso_electric_points.append(peptide_isoelectric_point)
 	    pep_mass.append(peptide_mass)
-	    # print(i)
 	    i += 1
 
 	# Combining the sequences, times, and physicochemical characteristics.

@@ -23,3 +23,7 @@ predict(object = lm_out1, newdata = data.frame(column_len = 250, gradient = 129)
 
 # aylward
 predict(object = lm_out1, newdata = data.frame(column_len = 600, gradient = 100))
+
+## own data
+
+predict(object = lm_out1, newdata = data.frame(column_len = , gradient = 120))

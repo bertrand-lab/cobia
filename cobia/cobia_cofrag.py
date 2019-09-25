@@ -40,12 +40,14 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
                                'ion_peak_width',
                                'number_of_parallel',
                                'every_nth']
+
         # checking that all required parameters are present:
         if sorted(all_required_params) != sorted(list(dda_params.keys())):
             raise NameError('Error in parameter input file, check for typos or missing parameter.')
 	pep_list = peptide_master['peptide_sequence'].str.split('-').tolist()
         charge_state = []
         three_indicators = ['H', 'RP', 'KP']
+
         # removing the -OH and just getting the peptide
 	pep_list_real = []
 	for element_i in pep_list:
@@ -137,6 +139,7 @@ def cobia_cofrag(lcfilename, ddaparams, globalcofrag, output_name, target_df):
 	    # Define an output queue
 	    parallel_list = list(range(1, number_of_parallel + 1))
 	    print('initializing parallel...')
+
             # Setting up dictionary object to return results
 	    manager = mp.Manager()
             return_dict = manager.dict()

@@ -10,7 +10,7 @@ mass, and RT.
 
 import pyteomics
 from pyteomics import electrochem
-#from pyteomics import biolccc
+from pyteomics import biolccc
 from pyteomics import mass
 import re
 from argparse import ArgumentParser
@@ -43,18 +43,8 @@ def Codon_to_Aminoacid(CodonSeq):
     AASeq = "".join([Codon_AA[CodonSeq[i:i+3]] for i in range(0,len(CodonSeq),3)])
     return AASeq
 
-# Define command line arguments
-#parser = ArgumentParser()
-#parser.add_argument("-f", "--file", dest = "fastafilename", help = "Input is a .fasta file of protein coding sequences (Amino acids accepted only).")
-#parser.add_argument("-l", "--lcfile",
-#                    dest = "lcparams",
-#                    help = "Input of csv file that has the lc parameters: column_length, column_diameter, column_pore_size, second_solvent_concentration_a, second_solvent_concentration_b, gradient_0, gradient_1, gradient_2, flow_rate, code_format, linear, model")
-#parser.add_argument('-g', '--custom_gradient', help = 'Input of csv file which defines the custom gradient (non linear LC gradient)')
-#parser.add_argument("-n", "--name", dest = "output_name", help = "Character string of output file name")
-#args = parser.parse_args()
 
 # read in lc paramter file
-
 def peptide_mod_biolccc_rt_prediction(lc_params_file, fasta_file_name, custom_gradient, output_name):
 	lc_params = pd.read_csv(lc_params_file)
 

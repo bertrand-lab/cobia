@@ -34,4 +34,14 @@ pip install pyteomics
 pip install pyopenms
 ```
 
-To use *cobia*, please see the how-to above!
+### Input
+
+A *single line* fasta file, predicted retention times (recommend using RTModel or another retention time predictor, which requires an mzML file from an MS experiment).
+
+### Output
+
+A csv file of peptides and cofragmentation scores.
+
+### Details
+
+To use *cobia*, please see the how-to above! (in the 'Writing' folder)

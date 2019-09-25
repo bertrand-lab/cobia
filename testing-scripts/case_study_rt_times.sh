@@ -4,13 +4,13 @@
 # this step is not required for cofragmentation prediction, but is used to figure out tryptic peptides that would be useful
 # for examining taxon-specific proteins.
 
-#cobia database_trypsin -f ../data/bertrand_data/orfs.filtered.pep.fasta -n ../data/bertrand_data/orfs.filtered.pep.trypsin.txt -c no-write
+cobia database_trypsin -f ../data/bertrand_data/orfs.filtered.pep.fasta -n ../data/bertrand_data/orfs.filtered.pep.trypsin_n.txt -c no-write
 
-#cobia database_trypsin -f ../data/bertrand_data/orfs.filtered.pep.fasta -n ../data/bertrand_data/orfs.filtered.pep.trypsin_wcontigs.txt -c write
+cobia database_trypsin -f ../data/bertrand_data/orfs.filtered.pep.fasta -n ../data/bertrand_data/orfs.filtered.pep.trypsin_wcontigs_n.txt -c write
 
 # retention time prediction with BioLCCC. The same gradient and LC characteristics are used from Broberg et al 2018.
 
-cobia peptide_mod_biolccc_rt_prediction -f ../data/bertrand_data/orfs.filtered.pep.fasta -l ../data/broberg_data/lc_params_broberg2.csv -n ../data/bertrand_data/orfs.filtered.pep.trypsin -g ../data/broberg_data/custom_gradient_broberg2.csv
+#cobia peptide_mod_biolccc_rt_prediction -f ../data/bertrand_data/orfs.filtered.pep.fasta -l ../data/broberg_data/lc_params_broberg2.csv -n ../data/bertrand_data/orfs.filtered.pep.trypsin -g ../data/broberg_data/custom_gradient_broberg2.csv
 
 # examine targeted cofragmentation scores
 

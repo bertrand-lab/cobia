@@ -21,13 +21,6 @@ import numbers
 import os
 import csv
 
-#inputting command line arguments
-
-#parser = ArgumentParser()
-#parser.add_argument("-f", "--file", dest = "filename", help = "Input fasta file of database (AA sequences)")
-#parser.add_argument("-n", "--name", dest = "output_name", help = "Character string of .txt file output with all tryptic peptides from database")
-#args = parser.parse_args()
-
 def database_trypsin(filename, output_name, contig_ids):
 
 	seq_vec = []
@@ -42,7 +35,6 @@ def database_trypsin(filename, output_name, contig_ids):
 	#%%
 	for line in fasta_in:
 	    line = line.strip()
-	    # print(line)
 	    if len(line) == 0: # blank line
 	        continue # skip to next iteration of loop
 	    elif line[0] == ">": # header-line
@@ -51,13 +43,11 @@ def database_trypsin(filename, output_name, contig_ids):
 	        # separate if statements for if the fasta file was input as amino acids or as genes or as mrna
 	        cleaved_line = pyteomics.parser.cleave(str(line), pyteomics.parser.expasy_rules['trypsin'])
 	        cleaved_line = list(cleaved_line)
-	        #tryp_df = pd.DataFrame(column)
 	        for tryp_pep in cleaved_line:
 	            if len(tryp_pep) < 5:
 	                continue
 	            seq_vec.append(tryp_pep)
 	            contig_vec.append(last_seq)
-	            # print(len(seq_vec))
 	fasta_in.close()
 
 	with open(output_name, 'w') as output:

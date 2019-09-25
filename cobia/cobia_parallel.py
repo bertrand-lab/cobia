@@ -68,11 +68,8 @@ def parallel_split(p_comp,
         for i in parallel_groupings:
             #quantile_x = unique_quantiles[i]
             #print(i)
-            print('in loop')
             quantile_upper_bound = max(i).right
-            print(quantile_upper_bound)
             quantile_lower_bound = min(i).left
-            print(quantile_lower_bound)
             # Quantiles need to be adjusted if they are the first or last one.
             # This is because the quantiles are computed from 'rts', which is the
             # center of the ion_peak_width.
