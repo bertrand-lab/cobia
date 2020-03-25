@@ -45,3 +45,10 @@ A csv file of peptides and cofragmentation scores.
 ### Details
 
 To use *cobia*, please see the how-to above! (in the 'Writing' folder)
+
+
+### To Do:
+
+Convert over to python 3.6: Originally, I had used python 2 because I wanted to use BioLCCC. I've been getting some strange errors using BioLCCC with memory. Also, I think the 2nd approach in the manusript is more flexible (training a retention time model off of observed peptides).
+
+
