@@ -34,6 +34,7 @@ def database_trypsin(filename, output_name, contig_ids):
     for seq_record in SeqIO.parse(filename, "fasta"):
         cleaved_line = pyteomics.parser.cleave(str(seq_record.seq), pyteomics.parser.expasy_rules['trypsin'])
         cleaved_line = list(cleaved_line)
+        # don't use the peptides that are less than 5 amino acids long
         for tryp_pep in cleaved_line:
             if len(tryp_pep) < 5:
                 continue
