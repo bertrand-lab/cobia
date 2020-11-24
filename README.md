@@ -2,6 +2,10 @@
 
 *cobia* is a computational tool to predict the number of cofragmenting ions in a mass spectrometry experiment, focused on metaproteomics. Specifically, we calculate 'cofragmentation scores' which represent identification and quantification bias using mass spectrometry based metaproteomics.
 
+### Latest Changes
+
+I've removed the ability to use BioLCCC due to consistent and unclear errors. I've also updated the targeted approach, so that if you have a peptide in your targeted file that's not in your database, it doesn't stop the prediction, it just doesn't provide metrics of cofragmentation.
+
 ### Requirements
 
 The installation instructions assume a linux environment, although they can be adapted to work on a Windows or MacOS system as needed. The following python modules are required:
