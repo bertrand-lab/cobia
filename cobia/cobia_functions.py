@@ -44,7 +44,9 @@ def cofrag_ion_counter_targeted(max_injection_time, precursor_selection_window, 
             print(temp_pep_df)
             temp_pep_df = temp_pep_df.loc[temp_pep_df['mz'] == temp_pep_df['mz'].min()]
         if not len(temp_pep_df) == 1:
-            raise NameError('Eek! One of the target peptides you supplied is not in the database of potential peptides, check to see you would actually expect it:' + temp_pep)
+            print('Eek! One of the target peptides you supplied is not in the database of potential peptides, check to see you would actually expect it:' + temp_pep)
+            # if this condition is met, move to the next peptide
+            continue
         # find the first time the peptide enters the MS, and the last.
         pep_rt_lower = float(temp_pep_df['rt_lower'])
         pep_rt_upper = float(temp_pep_df['rt_upper'])
